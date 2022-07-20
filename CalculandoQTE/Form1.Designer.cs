@@ -29,6 +29,7 @@ namespace CalculandoQTE
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.qteM2 = new System.Windows.Forms.Label();
             this.textLargura = new System.Windows.Forms.Label();
             this.textAltura = new System.Windows.Forms.Label();
@@ -38,6 +39,10 @@ namespace CalculandoQTE
             this.textM2 = new System.Windows.Forms.Label();
             this.textResultado = new System.Windows.Forms.Label();
             this.botaoCalcular = new System.Windows.Forms.Button();
+            this.ListaResultado = new System.Windows.Forms.Label();
+            this.quantidadeItens = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.resultadoQteM2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // qteM2
@@ -54,27 +59,28 @@ namespace CalculandoQTE
             // 
             this.textLargura.AutoSize = true;
             this.textLargura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textLargura.Location = new System.Drawing.Point(12, 30);
+            this.textLargura.Location = new System.Drawing.Point(33, 47);
             this.textLargura.Name = "textLargura";
-            this.textLargura.Size = new System.Drawing.Size(54, 16);
+            this.textLargura.Size = new System.Drawing.Size(57, 16);
             this.textLargura.TabIndex = 1;
-            this.textLargura.Text = "Largura";
+            this.textLargura.Text = "Largura:";
+            this.textLargura.Click += new System.EventHandler(this.textLargura_Click);
             // 
             // textAltura
             // 
             this.textAltura.AutoSize = true;
             this.textAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAltura.Location = new System.Drawing.Point(18, 83);
+            this.textAltura.Location = new System.Drawing.Point(39, 100);
             this.textAltura.Name = "textAltura";
-            this.textAltura.Size = new System.Drawing.Size(42, 16);
+            this.textAltura.Size = new System.Drawing.Size(45, 16);
             this.textAltura.TabIndex = 2;
-            this.textAltura.Text = "Altura";
+            this.textAltura.Text = "Altura:";
             // 
             // textX
             // 
             this.textX.AutoSize = true;
             this.textX.ForeColor = System.Drawing.Color.Red;
-            this.textX.Location = new System.Drawing.Point(33, 67);
+            this.textX.Location = new System.Drawing.Point(54, 84);
             this.textX.Name = "textX";
             this.textX.Size = new System.Drawing.Size(12, 13);
             this.textX.TabIndex = 3;
@@ -83,7 +89,7 @@ namespace CalculandoQTE
             // boxL
             // 
             this.boxL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxL.Location = new System.Drawing.Point(12, 47);
+            this.boxL.Location = new System.Drawing.Point(33, 64);
             this.boxL.MaxLength = 10;
             this.boxL.Name = "boxL";
             this.boxL.Size = new System.Drawing.Size(53, 22);
@@ -94,10 +100,10 @@ namespace CalculandoQTE
             // boxA
             // 
             this.boxA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxA.Location = new System.Drawing.Point(12, 99);
+            this.boxA.Location = new System.Drawing.Point(33, 116);
             this.boxA.MaxLength = 10;
             this.boxA.Name = "boxA";
-            this.boxA.Size = new System.Drawing.Size(54, 22);
+            this.boxA.Size = new System.Drawing.Size(53, 22);
             this.boxA.TabIndex = 5;
             this.boxA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.boxA.TextChanged += new System.EventHandler(this.boxA_TextChanged);
@@ -107,18 +113,18 @@ namespace CalculandoQTE
             this.textM2.AutoSize = true;
             this.textM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textM2.ForeColor = System.Drawing.Color.Red;
-            this.textM2.Location = new System.Drawing.Point(87, 105);
+            this.textM2.Location = new System.Drawing.Point(97, 90);
             this.textM2.Name = "textM2";
-            this.textM2.Size = new System.Drawing.Size(36, 16);
+            this.textM2.Size = new System.Drawing.Size(89, 16);
             this.textM2.TabIndex = 6;
-            this.textM2.Text = "M² = ";
+            this.textM2.Text = "M² Adesivo = ";
             // 
             // textResultado
             // 
             this.textResultado.AutoSize = true;
             this.textResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textResultado.ForeColor = System.Drawing.Color.Red;
-            this.textResultado.Location = new System.Drawing.Point(118, 105);
+            this.textResultado.Location = new System.Drawing.Point(180, 90);
             this.textResultado.Name = "textResultado";
             this.textResultado.Size = new System.Drawing.Size(15, 16);
             this.textResultado.TabIndex = 7;
@@ -127,7 +133,7 @@ namespace CalculandoQTE
             // 
             // botaoCalcular
             // 
-            this.botaoCalcular.Location = new System.Drawing.Point(75, 72);
+            this.botaoCalcular.Location = new System.Drawing.Point(547, 345);
             this.botaoCalcular.Name = "botaoCalcular";
             this.botaoCalcular.Size = new System.Drawing.Size(75, 23);
             this.botaoCalcular.TabIndex = 8;
@@ -135,11 +141,47 @@ namespace CalculandoQTE
             this.botaoCalcular.UseVisualStyleBackColor = true;
             this.botaoCalcular.Click += new System.EventHandler(this.botaoCalcular_Click);
             // 
+            // ListaResultado
+            // 
+            this.ListaResultado.AutoSize = true;
+            this.ListaResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaResultado.Location = new System.Drawing.Point(430, 47);
+            this.ListaResultado.Name = "ListaResultado";
+            this.ListaResultado.Size = new System.Drawing.Size(73, 16);
+            this.ListaResultado.TabIndex = 9;
+            this.ListaResultado.Text = "Resultado:";
+            this.ListaResultado.UseMnemonic = false;
+            // 
+            // quantidadeItens
+            // 
+            this.quantidadeItens.AutoSize = true;
+            this.quantidadeItens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantidadeItens.Location = new System.Drawing.Point(228, 50);
+            this.quantidadeItens.Name = "quantidadeItens";
+            this.quantidadeItens.Size = new System.Drawing.Size(122, 16);
+            this.quantidadeItens.TabIndex = 10;
+            this.quantidadeItens.Text = "Quantidade por M²:";
+            // 
+            // resultadoQteM2
+            // 
+            this.resultadoQteM2.AutoSize = true;
+            this.resultadoQteM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultadoQteM2.ForeColor = System.Drawing.Color.Red;
+            this.resultadoQteM2.Location = new System.Drawing.Point(348, 50);
+            this.resultadoQteM2.Name = "resultadoQteM2";
+            this.resultadoQteM2.Size = new System.Drawing.Size(15, 16);
+            this.resultadoQteM2.TabIndex = 11;
+            this.resultadoQteM2.Text = "0";
+            this.resultadoQteM2.Click += new System.EventHandler(this.resultadoQteM2_Click);
+            // 
             // NomePrograma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 380);
+            this.Controls.Add(this.resultadoQteM2);
+            this.Controls.Add(this.quantidadeItens);
+            this.Controls.Add(this.ListaResultado);
             this.Controls.Add(this.botaoCalcular);
             this.Controls.Add(this.textResultado);
             this.Controls.Add(this.textM2);
@@ -151,6 +193,7 @@ namespace CalculandoQTE
             this.Controls.Add(this.qteM2);
             this.Name = "NomePrograma";
             this.Text = "qteM² by Leandro Ricardo";
+            this.Load += new System.EventHandler(this.NomePrograma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +210,10 @@ namespace CalculandoQTE
         private System.Windows.Forms.Label textM2;
         private System.Windows.Forms.Label textResultado;
         private System.Windows.Forms.Button botaoCalcular;
+        private System.Windows.Forms.Label ListaResultado;
+        private System.Windows.Forms.Label quantidadeItens;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label resultadoQteM2;
     }
 }
 

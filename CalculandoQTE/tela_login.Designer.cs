@@ -33,13 +33,14 @@ namespace CalculandoQTE
             this.imgSenha = new System.Windows.Forms.PictureBox();
             this.boxSenha = new System.Windows.Forms.TextBox();
             this.botaoConectar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgSenha)).BeginInit();
             this.SuspendLayout();
             // 
             // imgSenha
             // 
             this.imgSenha.Image = ((System.Drawing.Image)(resources.GetObject("imgSenha.Image")));
-            this.imgSenha.Location = new System.Drawing.Point(96, 44);
+            this.imgSenha.Location = new System.Drawing.Point(96, 27);
             this.imgSenha.Name = "imgSenha";
             this.imgSenha.Size = new System.Drawing.Size(37, 35);
             this.imgSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,12 +67,22 @@ namespace CalculandoQTE
             this.botaoConectar.UseVisualStyleBackColor = true;
             this.botaoConectar.Click += new System.EventHandler(this.botaoConectar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(88, 69);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Password";
+            // 
             // tela_login
             // 
             this.AcceptButton = this.botaoConectar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(228, 157);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.botaoConectar);
             this.Controls.Add(this.boxSenha);
             this.Controls.Add(this.imgSenha);
@@ -91,5 +102,6 @@ namespace CalculandoQTE
         private System.Windows.Forms.PictureBox imgSenha;
         private System.Windows.Forms.TextBox boxSenha;
         private System.Windows.Forms.Button botaoConectar;
+        private System.Windows.Forms.Label label1;
     }
 }

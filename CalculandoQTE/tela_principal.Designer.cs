@@ -144,7 +144,7 @@ namespace CalculandoQTE
             // 
             this.botaoCalcular.AccessibleDescription = "";
             this.botaoCalcular.AccessibleName = "";
-            this.botaoCalcular.Location = new System.Drawing.Point(431, 137);
+            this.botaoCalcular.Location = new System.Drawing.Point(20, 221);
             this.botaoCalcular.Name = "botaoCalcular";
             this.botaoCalcular.Size = new System.Drawing.Size(75, 23);
             this.botaoCalcular.TabIndex = 8;
@@ -274,6 +274,7 @@ namespace CalculandoQTE
             this.Controls.Add(this.textLargura);
             this.Controls.Add(this.qteM2);
             this.Name = "NomePrograma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "qteM² by Leandro Ricardo";
             this.Load += new System.EventHandler(this.NomePrograma_Load);
             this.ResumeLayout(false);

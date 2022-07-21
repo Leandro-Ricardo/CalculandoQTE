@@ -17,7 +17,9 @@ namespace CalculandoQTE
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NomePrograma());
+            Application.Run(new tela_login());
+            
+            
         }
 
     }

@@ -8,3 +8,4 @@ D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.csproj.GenerateResourc
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.csproj.CoreCompileInputs.cache
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.exe
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.pdb
+D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.tela_login.resources

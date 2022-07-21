@@ -86,8 +86,8 @@ namespace CalculandoQTE
             this.Controls.Add(this.botaoConectar);
             this.Controls.Add(this.boxSenha);
             this.Controls.Add(this.imgSenha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tela_login";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "qteM² Login";
             this.Load += new System.EventHandler(this.tela_login_Load);

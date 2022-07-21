@@ -33,7 +33,7 @@ namespace CalculandoQTE
                 nt.SetApartmentState(ApartmentState.STA);
                 nt.Start();
 
-                NomePrograma nm = new NomePrograma();
+                ProgramaPrincipal nm = new ProgramaPrincipal();
                 nm.Show();
                 nm.Visible = true;
 
@@ -49,7 +49,7 @@ namespace CalculandoQTE
 
         private void novoForm()
         {
-            Application.Run(new NomePrograma());
+            Application.Run(new ProgramaPrincipal());
         }
 
         private void boxSenha_TextChanged(object sender, EventArgs e)

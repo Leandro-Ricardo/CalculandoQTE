@@ -2,10 +2,10 @@ D:\C#\CalculandoQTE\CalculandoQTE\bin\Debug\CalculandoQTE.exe.config
 D:\C#\CalculandoQTE\CalculandoQTE\bin\Debug\CalculandoQTE.exe
 D:\C#\CalculandoQTE\CalculandoQTE\bin\Debug\CalculandoQTE.pdb
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.csproj.AssemblyReference.cache
-D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.NomePrograma.resources
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.Properties.Resources.resources
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.csproj.GenerateResource.cache
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.csproj.CoreCompileInputs.cache
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.exe
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.pdb
 D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.tela_login.resources
+D:\C#\CalculandoQTE\CalculandoQTE\obj\Debug\CalculandoQTE.ProgramaPrincipal.resources

@@ -43,12 +43,18 @@ namespace CalculandoQTE
             this.quantidadeItens = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.resultadoQteM2 = new System.Windows.Forms.Label();
+            this.semCorte = new System.Windows.Forms.Label();
+            this.comCorte = new System.Windows.Forms.Label();
+            this.resultadoSemCorte = new System.Windows.Forms.Label();
+            this.resultadoComCorte = new System.Windows.Forms.Label();
+            this.qteAdesivos = new System.Windows.Forms.Label();
+            this.quantidadeAdesivos = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // qteM2
             // 
             this.qteM2.AutoSize = true;
-            this.qteM2.Location = new System.Drawing.Point(301, 9);
+            this.qteM2.Location = new System.Drawing.Point(218, 9);
             this.qteM2.Name = "qteM2";
             this.qteM2.Size = new System.Drawing.Size(34, 13);
             this.qteM2.TabIndex = 0;
@@ -89,11 +95,13 @@ namespace CalculandoQTE
             // boxL
             // 
             this.boxL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxL.ImeMode = System.Windows.Forms.ImeMode.Close;
             this.boxL.Location = new System.Drawing.Point(33, 64);
             this.boxL.MaxLength = 10;
             this.boxL.Name = "boxL";
             this.boxL.Size = new System.Drawing.Size(53, 22);
             this.boxL.TabIndex = 4;
+            this.boxL.Text = "0.0";
             this.boxL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.boxL.TextChanged += new System.EventHandler(this.boxL_TextChanged);
             // 
@@ -105,6 +113,7 @@ namespace CalculandoQTE
             this.boxA.Name = "boxA";
             this.boxA.Size = new System.Drawing.Size(53, 22);
             this.boxA.TabIndex = 5;
+            this.boxA.Text = "0.0";
             this.boxA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.boxA.TextChanged += new System.EventHandler(this.boxA_TextChanged);
             // 
@@ -113,7 +122,7 @@ namespace CalculandoQTE
             this.textM2.AutoSize = true;
             this.textM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textM2.ForeColor = System.Drawing.Color.Red;
-            this.textM2.Location = new System.Drawing.Point(97, 90);
+            this.textM2.Location = new System.Drawing.Point(129, 47);
             this.textM2.Name = "textM2";
             this.textM2.Size = new System.Drawing.Size(89, 16);
             this.textM2.TabIndex = 6;
@@ -124,7 +133,7 @@ namespace CalculandoQTE
             this.textResultado.AutoSize = true;
             this.textResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textResultado.ForeColor = System.Drawing.Color.Red;
-            this.textResultado.Location = new System.Drawing.Point(180, 90);
+            this.textResultado.Location = new System.Drawing.Point(212, 47);
             this.textResultado.Name = "textResultado";
             this.textResultado.Size = new System.Drawing.Size(15, 16);
             this.textResultado.TabIndex = 7;
@@ -133,7 +142,9 @@ namespace CalculandoQTE
             // 
             // botaoCalcular
             // 
-            this.botaoCalcular.Location = new System.Drawing.Point(547, 345);
+            this.botaoCalcular.AccessibleDescription = "";
+            this.botaoCalcular.AccessibleName = "";
+            this.botaoCalcular.Location = new System.Drawing.Point(431, 137);
             this.botaoCalcular.Name = "botaoCalcular";
             this.botaoCalcular.Size = new System.Drawing.Size(75, 23);
             this.botaoCalcular.TabIndex = 8;
@@ -144,8 +155,8 @@ namespace CalculandoQTE
             // ListaResultado
             // 
             this.ListaResultado.AutoSize = true;
-            this.ListaResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListaResultado.Location = new System.Drawing.Point(430, 47);
+            this.ListaResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListaResultado.Location = new System.Drawing.Point(289, 46);
             this.ListaResultado.Name = "ListaResultado";
             this.ListaResultado.Size = new System.Drawing.Size(73, 16);
             this.ListaResultado.TabIndex = 9;
@@ -156,7 +167,7 @@ namespace CalculandoQTE
             // 
             this.quantidadeItens.AutoSize = true;
             this.quantidadeItens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantidadeItens.Location = new System.Drawing.Point(228, 50);
+            this.quantidadeItens.Location = new System.Drawing.Point(111, 70);
             this.quantidadeItens.Name = "quantidadeItens";
             this.quantidadeItens.Size = new System.Drawing.Size(122, 16);
             this.quantidadeItens.TabIndex = 10;
@@ -167,18 +178,88 @@ namespace CalculandoQTE
             this.resultadoQteM2.AutoSize = true;
             this.resultadoQteM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultadoQteM2.ForeColor = System.Drawing.Color.Red;
-            this.resultadoQteM2.Location = new System.Drawing.Point(348, 50);
+            this.resultadoQteM2.Location = new System.Drawing.Point(231, 70);
             this.resultadoQteM2.Name = "resultadoQteM2";
             this.resultadoQteM2.Size = new System.Drawing.Size(15, 16);
             this.resultadoQteM2.TabIndex = 11;
             this.resultadoQteM2.Text = "0";
             this.resultadoQteM2.Click += new System.EventHandler(this.resultadoQteM2_Click);
             // 
+            // semCorte
+            // 
+            this.semCorte.AutoSize = true;
+            this.semCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.semCorte.Location = new System.Drawing.Point(289, 70);
+            this.semCorte.Name = "semCorte";
+            this.semCorte.Size = new System.Drawing.Size(75, 16);
+            this.semCorte.TabIndex = 12;
+            this.semCorte.Text = "Sem corte: ";
+            // 
+            // comCorte
+            // 
+            this.comCorte.AutoSize = true;
+            this.comCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comCorte.Location = new System.Drawing.Point(289, 100);
+            this.comCorte.Name = "comCorte";
+            this.comCorte.Size = new System.Drawing.Size(72, 16);
+            this.comCorte.TabIndex = 13;
+            this.comCorte.Text = "Com corte:";
+            // 
+            // resultadoSemCorte
+            // 
+            this.resultadoSemCorte.AutoSize = true;
+            this.resultadoSemCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultadoSemCorte.ForeColor = System.Drawing.Color.Red;
+            this.resultadoSemCorte.Location = new System.Drawing.Point(355, 70);
+            this.resultadoSemCorte.Name = "resultadoSemCorte";
+            this.resultadoSemCorte.Size = new System.Drawing.Size(35, 16);
+            this.resultadoSemCorte.TabIndex = 14;
+            this.resultadoSemCorte.Text = "R$ 0";
+            this.resultadoSemCorte.Click += new System.EventHandler(this.resultadoSemCorte_Click);
+            // 
+            // resultadoComCorte
+            // 
+            this.resultadoComCorte.AutoSize = true;
+            this.resultadoComCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultadoComCorte.ForeColor = System.Drawing.Color.Red;
+            this.resultadoComCorte.Location = new System.Drawing.Point(354, 100);
+            this.resultadoComCorte.Name = "resultadoComCorte";
+            this.resultadoComCorte.Size = new System.Drawing.Size(35, 16);
+            this.resultadoComCorte.TabIndex = 15;
+            this.resultadoComCorte.Text = "R$ 0";
+            // 
+            // qteAdesivos
+            // 
+            this.qteAdesivos.AutoSize = true;
+            this.qteAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qteAdesivos.Location = new System.Drawing.Point(17, 154);
+            this.qteAdesivos.Name = "qteAdesivos";
+            this.qteAdesivos.Size = new System.Drawing.Size(89, 16);
+            this.qteAdesivos.TabIndex = 16;
+            this.qteAdesivos.Text = "Qte Adesivos";
+            // 
+            // quantidadeAdesivos
+            // 
+            this.quantidadeAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantidadeAdesivos.Location = new System.Drawing.Point(33, 171);
+            this.quantidadeAdesivos.Name = "quantidadeAdesivos";
+            this.quantidadeAdesivos.Size = new System.Drawing.Size(53, 22);
+            this.quantidadeAdesivos.TabIndex = 17;
+            this.quantidadeAdesivos.Text = "0";
+            this.quantidadeAdesivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.quantidadeAdesivos.TextChanged += new System.EventHandler(this.quantidadeAdesivos_TextChanged);
+            // 
             // NomePrograma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 380);
+            this.ClientSize = new System.Drawing.Size(518, 256);
+            this.Controls.Add(this.quantidadeAdesivos);
+            this.Controls.Add(this.qteAdesivos);
+            this.Controls.Add(this.resultadoComCorte);
+            this.Controls.Add(this.resultadoSemCorte);
+            this.Controls.Add(this.comCorte);
+            this.Controls.Add(this.semCorte);
             this.Controls.Add(this.resultadoQteM2);
             this.Controls.Add(this.quantidadeItens);
             this.Controls.Add(this.ListaResultado);
@@ -214,6 +295,12 @@ namespace CalculandoQTE
         private System.Windows.Forms.Label quantidadeItens;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label resultadoQteM2;
+        private System.Windows.Forms.Label semCorte;
+        private System.Windows.Forms.Label comCorte;
+        private System.Windows.Forms.Label resultadoSemCorte;
+        private System.Windows.Forms.Label resultadoComCorte;
+        private System.Windows.Forms.Label qteAdesivos;
+        private System.Windows.Forms.TextBox quantidadeAdesivos;
     }
 }
 

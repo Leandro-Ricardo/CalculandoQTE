@@ -29,300 +29,344 @@ namespace CalculandoQTE
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramaPrincipal));
-            this.textLargura = new System.Windows.Forms.Label();
-            this.textAltura = new System.Windows.Forms.Label();
-            this.textX = new System.Windows.Forms.Label();
-            this.boxL = new System.Windows.Forms.TextBox();
-            this.boxA = new System.Windows.Forms.TextBox();
-            this.textM2 = new System.Windows.Forms.Label();
-            this.textResultado = new System.Windows.Forms.Label();
+            this.TextoLargura = new System.Windows.Forms.Label();
+            this.TextoAltura = new System.Windows.Forms.Label();
+            this.TextoX = new System.Windows.Forms.Label();
+            this.BoxLargura = new System.Windows.Forms.TextBox();
+            this.BoxAltura = new System.Windows.Forms.TextBox();
+            this.TextoM2produto = new System.Windows.Forms.Label();
+            this.TextoResultadoM2Produto = new System.Windows.Forms.Label();
             this.botaoCalcular = new System.Windows.Forms.Button();
-            this.ListaResultado = new System.Windows.Forms.Label();
-            this.quantidadeItens = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.resultadoQteM2 = new System.Windows.Forms.Label();
-            this.semCorte = new System.Windows.Forms.Label();
-            this.comCorte = new System.Windows.Forms.Label();
-            this.resultadoSemCorte = new System.Windows.Forms.Label();
-            this.resultadoComCorte = new System.Windows.Forms.Label();
-            this.qteAdesivos = new System.Windows.Forms.Label();
-            this.quantidadeAdesivos = new System.Windows.Forms.TextBox();
-            this.resultadoLona = new System.Windows.Forms.Label();
-            this.tubeteCorda = new System.Windows.Forms.Label();
-            this.ilhos = new System.Windows.Forms.Label();
-            this.resultadoTubeteCorda = new System.Windows.Forms.Label();
-            this.resultadoIlhos = new System.Windows.Forms.Label();
-            this.adesivoRetroverso = new System.Windows.Forms.Label();
-            this.resultadoRetroverso = new System.Windows.Forms.Label();
+            this.TextoResultadoAdesivos = new System.Windows.Forms.Label();
+            this.TextoQuantidadeAdesivosM2 = new System.Windows.Forms.Label();
+            this.TextoResultadoQtdM2 = new System.Windows.Forms.Label();
+            this.TextoSemCorte = new System.Windows.Forms.Label();
+            this.TextoComCorte = new System.Windows.Forms.Label();
+            this.TextoResultadoSemCorte = new System.Windows.Forms.Label();
+            this.TextoResultadoComCorte = new System.Windows.Forms.Label();
+            this.TextoQuantidadeAdesivos = new System.Windows.Forms.Label();
+            this.BoxQuantidadeAdesivos = new System.Windows.Forms.TextBox();
+            this.TextoResultadoLona = new System.Windows.Forms.Label();
+            this.TextoTubeteCorda = new System.Windows.Forms.Label();
+            this.TextoIlhos = new System.Windows.Forms.Label();
+            this.TextoResultadoTubeteCorda = new System.Windows.Forms.Label();
+            this.TextoResultadoIlhos = new System.Windows.Forms.Label();
+            this.TextoAdesivoRetroverso = new System.Windows.Forms.Label();
+            this.TextoRresultadoRetroverso = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textLargura
+            // TextoLargura
             // 
-            this.textLargura.AutoSize = true;
-            this.textLargura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textLargura.Location = new System.Drawing.Point(47, 47);
-            this.textLargura.Name = "textLargura";
-            this.textLargura.Size = new System.Drawing.Size(57, 16);
-            this.textLargura.TabIndex = 1;
-            this.textLargura.Text = "Largura:";
-            this.textLargura.Click += new System.EventHandler(this.textLargura_Click);
+            this.TextoLargura.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoLargura.AutoSize = true;
+            this.TextoLargura.BackColor = System.Drawing.Color.Transparent;
+            this.TextoLargura.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoLargura.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoLargura.Location = new System.Drawing.Point(30, 75);
+            this.TextoLargura.Name = "TextoLargura";
+            this.TextoLargura.Size = new System.Drawing.Size(96, 26);
+            this.TextoLargura.TabIndex = 1;
+            this.TextoLargura.Text = "Largura:";
+            this.TextoLargura.Click += new System.EventHandler(this.textLargura_Click);
             // 
-            // textAltura
+            // TextoAltura
             // 
-            this.textAltura.AutoSize = true;
-            this.textAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAltura.Location = new System.Drawing.Point(53, 100);
-            this.textAltura.Name = "textAltura";
-            this.textAltura.Size = new System.Drawing.Size(45, 16);
-            this.textAltura.TabIndex = 2;
-            this.textAltura.Text = "Altura:";
+            this.TextoAltura.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoAltura.AutoSize = true;
+            this.TextoAltura.BackColor = System.Drawing.Color.Transparent;
+            this.TextoAltura.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoAltura.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoAltura.Location = new System.Drawing.Point(30, 154);
+            this.TextoAltura.Name = "TextoAltura";
+            this.TextoAltura.Size = new System.Drawing.Size(80, 26);
+            this.TextoAltura.TabIndex = 2;
+            this.TextoAltura.Text = "Altura:";
+            this.TextoAltura.Click += new System.EventHandler(this.textAltura_Click);
             // 
-            // textX
+            // TextoX
             // 
-            this.textX.AutoSize = true;
-            this.textX.ForeColor = System.Drawing.Color.Red;
-            this.textX.Location = new System.Drawing.Point(68, 84);
-            this.textX.Name = "textX";
-            this.textX.Size = new System.Drawing.Size(12, 13);
-            this.textX.TabIndex = 3;
-            this.textX.Text = "x";
+            this.TextoX.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoX.AutoSize = true;
+            this.TextoX.BackColor = System.Drawing.Color.Transparent;
+            this.TextoX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoX.ForeColor = System.Drawing.Color.Red;
+            this.TextoX.Location = new System.Drawing.Point(74, 137);
+            this.TextoX.Name = "TextoX";
+            this.TextoX.Size = new System.Drawing.Size(16, 20);
+            this.TextoX.TabIndex = 3;
+            this.TextoX.Text = "x";
             // 
-            // boxL
+            // BoxLargura
             // 
-            this.boxL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxL.ImeMode = System.Windows.Forms.ImeMode.Close;
-            this.boxL.Location = new System.Drawing.Point(47, 64);
-            this.boxL.MaxLength = 10;
-            this.boxL.Name = "boxL";
-            this.boxL.Size = new System.Drawing.Size(53, 22);
-            this.boxL.TabIndex = 4;
-            this.boxL.Text = "0.0";
-            this.boxL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.boxL.TextChanged += new System.EventHandler(this.boxL_TextChanged);
+            this.BoxLargura.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BoxLargura.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxLargura.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.BoxLargura.ImeMode = System.Windows.Forms.ImeMode.Close;
+            this.BoxLargura.Location = new System.Drawing.Point(35, 104);
+            this.BoxLargura.MaxLength = 10;
+            this.BoxLargura.Name = "BoxLargura";
+            this.BoxLargura.Size = new System.Drawing.Size(91, 35);
+            this.BoxLargura.TabIndex = 1;
+            this.BoxLargura.Text = "0,0";
+            this.BoxLargura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BoxLargura.TextChanged += new System.EventHandler(this.boxL_TextChanged);
             // 
-            // boxA
+            // BoxAltura
             // 
-            this.boxA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxA.Location = new System.Drawing.Point(47, 116);
-            this.boxA.MaxLength = 10;
-            this.boxA.Name = "boxA";
-            this.boxA.Size = new System.Drawing.Size(53, 22);
-            this.boxA.TabIndex = 5;
-            this.boxA.Text = "0.0";
-            this.boxA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.boxA.TextChanged += new System.EventHandler(this.boxA_TextChanged);
+            this.BoxAltura.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BoxAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxAltura.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.BoxAltura.Location = new System.Drawing.Point(35, 184);
+            this.BoxAltura.MaxLength = 10;
+            this.BoxAltura.Name = "BoxAltura";
+            this.BoxAltura.Size = new System.Drawing.Size(91, 35);
+            this.BoxAltura.TabIndex = 2;
+            this.BoxAltura.Text = "0,0";
+            this.BoxAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BoxAltura.TextChanged += new System.EventHandler(this.boxA_TextChanged);
             // 
-            // textM2
+            // TextoM2produto
             // 
-            this.textM2.AutoSize = true;
-            this.textM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textM2.ForeColor = System.Drawing.Color.Red;
-            this.textM2.Location = new System.Drawing.Point(169, 20);
-            this.textM2.Name = "textM2";
-            this.textM2.Size = new System.Drawing.Size(86, 16);
-            this.textM2.TabIndex = 6;
-            this.textM2.Text = "M² Produto = ";
+            this.TextoM2produto.AutoSize = true;
+            this.TextoM2produto.BackColor = System.Drawing.Color.Transparent;
+            this.TextoM2produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoM2produto.ForeColor = System.Drawing.Color.Red;
+            this.TextoM2produto.Location = new System.Drawing.Point(251, 46);
+            this.TextoM2produto.Name = "TextoM2produto";
+            this.TextoM2produto.Size = new System.Drawing.Size(155, 31);
+            this.TextoM2produto.TabIndex = 6;
+            this.TextoM2produto.Text = "M² Produto:";
+            this.TextoM2produto.Click += new System.EventHandler(this.textM2_Click);
             // 
-            // textResultado
+            // TextoResultadoM2Produto
             // 
-            this.textResultado.AutoSize = true;
-            this.textResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textResultado.ForeColor = System.Drawing.Color.Red;
-            this.textResultado.Location = new System.Drawing.Point(246, 20);
-            this.textResultado.Name = "textResultado";
-            this.textResultado.Size = new System.Drawing.Size(15, 16);
-            this.textResultado.TabIndex = 7;
-            this.textResultado.Text = "0";
-            this.textResultado.Click += new System.EventHandler(this.textResultado_Click);
+            this.TextoResultadoM2Produto.AutoSize = true;
+            this.TextoResultadoM2Produto.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoM2Produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoM2Produto.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoM2Produto.Location = new System.Drawing.Point(396, 46);
+            this.TextoResultadoM2Produto.Name = "TextoResultadoM2Produto";
+            this.TextoResultadoM2Produto.Size = new System.Drawing.Size(80, 31);
+            this.TextoResultadoM2Produto.TabIndex = 7;
+            this.TextoResultadoM2Produto.Text = "0 mm";
+            this.TextoResultadoM2Produto.Click += new System.EventHandler(this.textResultado_Click);
             // 
             // botaoCalcular
             // 
             this.botaoCalcular.AccessibleDescription = "";
             this.botaoCalcular.AccessibleName = "";
-            this.botaoCalcular.Location = new System.Drawing.Point(310, 294);
+            this.botaoCalcular.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.botaoCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoCalcular.Location = new System.Drawing.Point(35, 361);
             this.botaoCalcular.Name = "botaoCalcular";
-            this.botaoCalcular.Size = new System.Drawing.Size(75, 23);
-            this.botaoCalcular.TabIndex = 8;
+            this.botaoCalcular.Size = new System.Drawing.Size(91, 35);
+            this.botaoCalcular.TabIndex = 4;
             this.botaoCalcular.Text = "calcular";
             this.botaoCalcular.UseVisualStyleBackColor = true;
             this.botaoCalcular.Click += new System.EventHandler(this.botaoCalcular_Click);
             // 
-            // ListaResultado
+            // TextoResultadoAdesivos
             // 
-            this.ListaResultado.AutoSize = true;
-            this.ListaResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListaResultado.Location = new System.Drawing.Point(155, 55);
-            this.ListaResultado.Name = "ListaResultado";
-            this.ListaResultado.Size = new System.Drawing.Size(133, 16);
-            this.ListaResultado.TabIndex = 9;
-            this.ListaResultado.Text = "Resultado Adesivos:";
-            this.ListaResultado.UseMnemonic = false;
+            this.TextoResultadoAdesivos.AutoSize = true;
+            this.TextoResultadoAdesivos.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoAdesivos.ForeColor = System.Drawing.Color.MediumBlue;
+            this.TextoResultadoAdesivos.Location = new System.Drawing.Point(242, 96);
+            this.TextoResultadoAdesivos.Name = "TextoResultadoAdesivos";
+            this.TextoResultadoAdesivos.Size = new System.Drawing.Size(251, 29);
+            this.TextoResultadoAdesivos.TabIndex = 9;
+            this.TextoResultadoAdesivos.Text = "Resultado Adesivos:";
+            this.TextoResultadoAdesivos.UseMnemonic = false;
             // 
-            // quantidadeItens
+            // TextoQuantidadeAdesivosM2
             // 
-            this.quantidadeItens.AutoSize = true;
-            this.quantidadeItens.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantidadeItens.Location = new System.Drawing.Point(155, 71);
-            this.quantidadeItens.Name = "quantidadeItens";
-            this.quantidadeItens.Size = new System.Drawing.Size(122, 16);
-            this.quantidadeItens.TabIndex = 10;
-            this.quantidadeItens.Text = "Quantidade por M²:";
+            this.TextoQuantidadeAdesivosM2.AutoSize = true;
+            this.TextoQuantidadeAdesivosM2.BackColor = System.Drawing.Color.Transparent;
+            this.TextoQuantidadeAdesivosM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoQuantidadeAdesivosM2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoQuantidadeAdesivosM2.Location = new System.Drawing.Point(257, 127);
+            this.TextoQuantidadeAdesivosM2.Name = "TextoQuantidadeAdesivosM2";
+            this.TextoQuantidadeAdesivosM2.Size = new System.Drawing.Size(219, 29);
+            this.TextoQuantidadeAdesivosM2.TabIndex = 10;
+            this.TextoQuantidadeAdesivosM2.Text = "Quantidade por M²:";
             // 
-            // resultadoQteM2
+            // TextoResultadoQtdM2
             // 
-            this.resultadoQteM2.AutoSize = true;
-            this.resultadoQteM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoQteM2.ForeColor = System.Drawing.Color.Red;
-            this.resultadoQteM2.Location = new System.Drawing.Point(271, 71);
-            this.resultadoQteM2.Name = "resultadoQteM2";
-            this.resultadoQteM2.Size = new System.Drawing.Size(15, 16);
-            this.resultadoQteM2.TabIndex = 11;
-            this.resultadoQteM2.Text = "0";
-            this.resultadoQteM2.Click += new System.EventHandler(this.resultadoQteM2_Click);
+            this.TextoResultadoQtdM2.AutoSize = true;
+            this.TextoResultadoQtdM2.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoQtdM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoQtdM2.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoQtdM2.Location = new System.Drawing.Point(257, 156);
+            this.TextoResultadoQtdM2.Name = "TextoResultadoQtdM2";
+            this.TextoResultadoQtdM2.Size = new System.Drawing.Size(54, 25);
+            this.TextoResultadoQtdM2.TabIndex = 11;
+            this.TextoResultadoQtdM2.Text = "0 un";
+            this.TextoResultadoQtdM2.Click += new System.EventHandler(this.resultadoQteM2_Click);
             // 
-            // semCorte
+            // TextoSemCorte
             // 
-            this.semCorte.AutoSize = true;
-            this.semCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.semCorte.Location = new System.Drawing.Point(155, 97);
-            this.semCorte.Name = "semCorte";
-            this.semCorte.Size = new System.Drawing.Size(75, 16);
-            this.semCorte.TabIndex = 12;
-            this.semCorte.Text = "Sem corte: ";
+            this.TextoSemCorte.AutoSize = true;
+            this.TextoSemCorte.BackColor = System.Drawing.Color.Transparent;
+            this.TextoSemCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoSemCorte.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoSemCorte.Location = new System.Drawing.Point(257, 196);
+            this.TextoSemCorte.Name = "TextoSemCorte";
+            this.TextoSemCorte.Size = new System.Drawing.Size(135, 29);
+            this.TextoSemCorte.TabIndex = 12;
+            this.TextoSemCorte.Text = "Sem corte: ";
             // 
-            // comCorte
+            // TextoComCorte
             // 
-            this.comCorte.AutoSize = true;
-            this.comCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comCorte.Location = new System.Drawing.Point(155, 116);
-            this.comCorte.Name = "comCorte";
-            this.comCorte.Size = new System.Drawing.Size(72, 16);
-            this.comCorte.TabIndex = 13;
-            this.comCorte.Text = "Com corte:";
+            this.TextoComCorte.AutoSize = true;
+            this.TextoComCorte.BackColor = System.Drawing.Color.Transparent;
+            this.TextoComCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoComCorte.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoComCorte.Location = new System.Drawing.Point(257, 266);
+            this.TextoComCorte.Name = "TextoComCorte";
+            this.TextoComCorte.Size = new System.Drawing.Size(130, 29);
+            this.TextoComCorte.TabIndex = 13;
+            this.TextoComCorte.Text = "Com corte:";
             // 
-            // resultadoSemCorte
+            // TextoResultadoSemCorte
             // 
-            this.resultadoSemCorte.AutoSize = true;
-            this.resultadoSemCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoSemCorte.ForeColor = System.Drawing.Color.Red;
-            this.resultadoSemCorte.Location = new System.Drawing.Point(221, 97);
-            this.resultadoSemCorte.Name = "resultadoSemCorte";
-            this.resultadoSemCorte.Size = new System.Drawing.Size(35, 16);
-            this.resultadoSemCorte.TabIndex = 14;
-            this.resultadoSemCorte.Text = "R$ 0";
-            this.resultadoSemCorte.Click += new System.EventHandler(this.resultadoSemCorte_Click);
+            this.TextoResultadoSemCorte.AutoSize = true;
+            this.TextoResultadoSemCorte.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoSemCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoSemCorte.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoSemCorte.Location = new System.Drawing.Point(257, 225);
+            this.TextoResultadoSemCorte.Name = "TextoResultadoSemCorte";
+            this.TextoResultadoSemCorte.Size = new System.Drawing.Size(87, 25);
+            this.TextoResultadoSemCorte.TabIndex = 14;
+            this.TextoResultadoSemCorte.Text = "R$ 0,00";
+            this.TextoResultadoSemCorte.Click += new System.EventHandler(this.resultadoSemCorte_Click);
             // 
-            // resultadoComCorte
+            // TextoResultadoComCorte
             // 
-            this.resultadoComCorte.AutoSize = true;
-            this.resultadoComCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoComCorte.ForeColor = System.Drawing.Color.Red;
-            this.resultadoComCorte.Location = new System.Drawing.Point(221, 116);
-            this.resultadoComCorte.Name = "resultadoComCorte";
-            this.resultadoComCorte.Size = new System.Drawing.Size(35, 16);
-            this.resultadoComCorte.TabIndex = 15;
-            this.resultadoComCorte.Text = "R$ 0";
+            this.TextoResultadoComCorte.AutoSize = true;
+            this.TextoResultadoComCorte.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoComCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoComCorte.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoComCorte.Location = new System.Drawing.Point(257, 295);
+            this.TextoResultadoComCorte.Name = "TextoResultadoComCorte";
+            this.TextoResultadoComCorte.Size = new System.Drawing.Size(87, 25);
+            this.TextoResultadoComCorte.TabIndex = 15;
+            this.TextoResultadoComCorte.Text = "R$ 0,00";
             // 
-            // qteAdesivos
+            // TextoQuantidadeAdesivos
             // 
-            this.qteAdesivos.AutoSize = true;
-            this.qteAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qteAdesivos.Location = new System.Drawing.Point(31, 154);
-            this.qteAdesivos.Name = "qteAdesivos";
-            this.qteAdesivos.Size = new System.Drawing.Size(89, 16);
-            this.qteAdesivos.TabIndex = 16;
-            this.qteAdesivos.Text = "Qte Adesivos";
+            this.TextoQuantidadeAdesivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoQuantidadeAdesivos.AutoSize = true;
+            this.TextoQuantidadeAdesivos.BackColor = System.Drawing.Color.Transparent;
+            this.TextoQuantidadeAdesivos.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoQuantidadeAdesivos.Location = new System.Drawing.Point(10, 248);
+            this.TextoQuantidadeAdesivos.Name = "TextoQuantidadeAdesivos";
+            this.TextoQuantidadeAdesivos.Size = new System.Drawing.Size(142, 26);
+            this.TextoQuantidadeAdesivos.TabIndex = 16;
+            this.TextoQuantidadeAdesivos.Text = "Qte Adesivos";
             // 
-            // quantidadeAdesivos
+            // BoxQuantidadeAdesivos
             // 
-            this.quantidadeAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantidadeAdesivos.Location = new System.Drawing.Point(47, 171);
-            this.quantidadeAdesivos.Name = "quantidadeAdesivos";
-            this.quantidadeAdesivos.Size = new System.Drawing.Size(53, 22);
-            this.quantidadeAdesivos.TabIndex = 17;
-            this.quantidadeAdesivos.Text = "0";
-            this.quantidadeAdesivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.quantidadeAdesivos.TextChanged += new System.EventHandler(this.quantidadeAdesivos_TextChanged);
+            this.BoxQuantidadeAdesivos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BoxQuantidadeAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.BoxQuantidadeAdesivos.Location = new System.Drawing.Point(35, 277);
+            this.BoxQuantidadeAdesivos.Name = "BoxQuantidadeAdesivos";
+            this.BoxQuantidadeAdesivos.Size = new System.Drawing.Size(91, 35);
+            this.BoxQuantidadeAdesivos.TabIndex = 3;
+            this.BoxQuantidadeAdesivos.Text = "0";
+            this.BoxQuantidadeAdesivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BoxQuantidadeAdesivos.TextChanged += new System.EventHandler(this.quantidadeAdesivos_TextChanged);
             // 
-            // resultadoLona
+            // TextoResultadoLona
             // 
-            this.resultadoLona.AutoSize = true;
-            this.resultadoLona.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoLona.Location = new System.Drawing.Point(155, 186);
-            this.resultadoLona.Name = "resultadoLona";
-            this.resultadoLona.Size = new System.Drawing.Size(106, 16);
-            this.resultadoLona.TabIndex = 18;
-            this.resultadoLona.Text = "Resultado Lona:";
+            this.TextoResultadoLona.AutoSize = true;
+            this.TextoResultadoLona.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoLona.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.TextoResultadoLona.ForeColor = System.Drawing.Color.MediumBlue;
+            this.TextoResultadoLona.Location = new System.Drawing.Point(554, 98);
+            this.TextoResultadoLona.Name = "TextoResultadoLona";
+            this.TextoResultadoLona.Size = new System.Drawing.Size(202, 29);
+            this.TextoResultadoLona.TabIndex = 18;
+            this.TextoResultadoLona.Text = "Resultado Lona:";
             // 
-            // tubeteCorda
+            // TextoTubeteCorda
             // 
-            this.tubeteCorda.AutoSize = true;
-            this.tubeteCorda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tubeteCorda.Location = new System.Drawing.Point(155, 208);
-            this.tubeteCorda.Name = "tubeteCorda";
-            this.tubeteCorda.Size = new System.Drawing.Size(105, 16);
-            this.tubeteCorda.TabIndex = 19;
-            this.tubeteCorda.Text = "Tubete e Corda:";
+            this.TextoTubeteCorda.AutoSize = true;
+            this.TextoTubeteCorda.BackColor = System.Drawing.Color.Transparent;
+            this.TextoTubeteCorda.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TextoTubeteCorda.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoTubeteCorda.Location = new System.Drawing.Point(554, 131);
+            this.TextoTubeteCorda.Name = "TextoTubeteCorda";
+            this.TextoTubeteCorda.Size = new System.Drawing.Size(188, 29);
+            this.TextoTubeteCorda.TabIndex = 19;
+            this.TextoTubeteCorda.Text = "Tubete e Corda:";
             // 
-            // ilhos
+            // TextoIlhos
             // 
-            this.ilhos.AutoSize = true;
-            this.ilhos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ilhos.Location = new System.Drawing.Point(157, 228);
-            this.ilhos.Name = "ilhos";
-            this.ilhos.Size = new System.Drawing.Size(39, 16);
-            this.ilhos.TabIndex = 20;
-            this.ilhos.Text = "Ilhós:";
-            this.ilhos.Click += new System.EventHandler(this.ilhos_Click);
+            this.TextoIlhos.AutoSize = true;
+            this.TextoIlhos.BackColor = System.Drawing.Color.Transparent;
+            this.TextoIlhos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TextoIlhos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoIlhos.Location = new System.Drawing.Point(554, 198);
+            this.TextoIlhos.Name = "TextoIlhos";
+            this.TextoIlhos.Size = new System.Drawing.Size(127, 29);
+            this.TextoIlhos.TabIndex = 20;
+            this.TextoIlhos.Text = "Com Ilhós:";
+            this.TextoIlhos.Click += new System.EventHandler(this.ilhos_Click);
             // 
-            // resultadoTubeteCorda
+            // TextoResultadoTubeteCorda
             // 
-            this.resultadoTubeteCorda.AutoSize = true;
-            this.resultadoTubeteCorda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoTubeteCorda.ForeColor = System.Drawing.Color.Red;
-            this.resultadoTubeteCorda.Location = new System.Drawing.Point(254, 208);
-            this.resultadoTubeteCorda.Name = "resultadoTubeteCorda";
-            this.resultadoTubeteCorda.Size = new System.Drawing.Size(35, 16);
-            this.resultadoTubeteCorda.TabIndex = 21;
-            this.resultadoTubeteCorda.Text = "R$ 0";
-            this.resultadoTubeteCorda.Click += new System.EventHandler(this.resultadoTubeteCorda_Click);
+            this.TextoResultadoTubeteCorda.AutoSize = true;
+            this.TextoResultadoTubeteCorda.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoTubeteCorda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoTubeteCorda.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoTubeteCorda.Location = new System.Drawing.Point(554, 156);
+            this.TextoResultadoTubeteCorda.Name = "TextoResultadoTubeteCorda";
+            this.TextoResultadoTubeteCorda.Size = new System.Drawing.Size(87, 25);
+            this.TextoResultadoTubeteCorda.TabIndex = 21;
+            this.TextoResultadoTubeteCorda.Text = "R$ 0,00";
+            this.TextoResultadoTubeteCorda.Click += new System.EventHandler(this.resultadoTubeteCorda_Click);
             // 
-            // resultadoIlhos
+            // TextoResultadoIlhos
             // 
-            this.resultadoIlhos.AutoSize = true;
-            this.resultadoIlhos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoIlhos.ForeColor = System.Drawing.Color.Red;
-            this.resultadoIlhos.Location = new System.Drawing.Point(254, 228);
-            this.resultadoIlhos.Name = "resultadoIlhos";
-            this.resultadoIlhos.Size = new System.Drawing.Size(35, 16);
-            this.resultadoIlhos.TabIndex = 22;
-            this.resultadoIlhos.Text = "R$ 0";
-            this.resultadoIlhos.Click += new System.EventHandler(this.resultadoIlhos_Click);
+            this.TextoResultadoIlhos.AutoSize = true;
+            this.TextoResultadoIlhos.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoIlhos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoIlhos.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoIlhos.Location = new System.Drawing.Point(554, 227);
+            this.TextoResultadoIlhos.Name = "TextoResultadoIlhos";
+            this.TextoResultadoIlhos.Size = new System.Drawing.Size(87, 25);
+            this.TextoResultadoIlhos.TabIndex = 22;
+            this.TextoResultadoIlhos.Text = "R$ 0,00";
+            this.TextoResultadoIlhos.Click += new System.EventHandler(this.resultadoIlhos_Click);
             // 
-            // adesivoRetroverso
+            // TextoAdesivoRetroverso
             // 
-            this.adesivoRetroverso.AutoSize = true;
-            this.adesivoRetroverso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adesivoRetroverso.Location = new System.Drawing.Point(155, 143);
-            this.adesivoRetroverso.Name = "adesivoRetroverso";
-            this.adesivoRetroverso.Size = new System.Drawing.Size(131, 16);
-            this.adesivoRetroverso.TabIndex = 23;
-            this.adesivoRetroverso.Text = "Adesivo Retroverso:";
-            this.adesivoRetroverso.Click += new System.EventHandler(this.adesivoRetroverso_Click);
+            this.TextoAdesivoRetroverso.AutoSize = true;
+            this.TextoAdesivoRetroverso.BackColor = System.Drawing.Color.Transparent;
+            this.TextoAdesivoRetroverso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoAdesivoRetroverso.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoAdesivoRetroverso.Location = new System.Drawing.Point(257, 350);
+            this.TextoAdesivoRetroverso.Name = "TextoAdesivoRetroverso";
+            this.TextoAdesivoRetroverso.Size = new System.Drawing.Size(229, 29);
+            this.TextoAdesivoRetroverso.TabIndex = 23;
+            this.TextoAdesivoRetroverso.Text = "Adesivo Retroverso:";
+            this.TextoAdesivoRetroverso.Click += new System.EventHandler(this.adesivoRetroverso_Click);
             // 
-            // resultadoRetroverso
+            // TextoRresultadoRetroverso
             // 
-            this.resultadoRetroverso.AutoSize = true;
-            this.resultadoRetroverso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultadoRetroverso.ForeColor = System.Drawing.Color.Red;
-            this.resultadoRetroverso.Location = new System.Drawing.Point(280, 143);
-            this.resultadoRetroverso.Name = "resultadoRetroverso";
-            this.resultadoRetroverso.Size = new System.Drawing.Size(35, 16);
-            this.resultadoRetroverso.TabIndex = 24;
-            this.resultadoRetroverso.Text = "R$ 0";
-            this.resultadoRetroverso.Click += new System.EventHandler(this.resultadoRetroverso_Click);
+            this.TextoRresultadoRetroverso.AutoSize = true;
+            this.TextoRresultadoRetroverso.BackColor = System.Drawing.Color.Transparent;
+            this.TextoRresultadoRetroverso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoRresultadoRetroverso.ForeColor = System.Drawing.Color.Red;
+            this.TextoRresultadoRetroverso.Location = new System.Drawing.Point(257, 379);
+            this.TextoRresultadoRetroverso.Name = "TextoRresultadoRetroverso";
+            this.TextoRresultadoRetroverso.Size = new System.Drawing.Size(87, 25);
+            this.TextoRresultadoRetroverso.TabIndex = 24;
+            this.TextoRresultadoRetroverso.Text = "R$ 0,00";
+            this.TextoRresultadoRetroverso.Click += new System.EventHandler(this.resultadoRetroverso_Click);
             // 
             // ProgramaPrincipal
             // 
@@ -332,35 +376,36 @@ namespace CalculandoQTE
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(823, 556);
-            this.Controls.Add(this.resultadoRetroverso);
-            this.Controls.Add(this.adesivoRetroverso);
-            this.Controls.Add(this.resultadoIlhos);
-            this.Controls.Add(this.resultadoTubeteCorda);
-            this.Controls.Add(this.ilhos);
-            this.Controls.Add(this.tubeteCorda);
-            this.Controls.Add(this.resultadoLona);
-            this.Controls.Add(this.quantidadeAdesivos);
-            this.Controls.Add(this.qteAdesivos);
-            this.Controls.Add(this.resultadoComCorte);
-            this.Controls.Add(this.resultadoSemCorte);
-            this.Controls.Add(this.comCorte);
-            this.Controls.Add(this.semCorte);
-            this.Controls.Add(this.resultadoQteM2);
-            this.Controls.Add(this.quantidadeItens);
-            this.Controls.Add(this.ListaResultado);
+            this.ClientSize = new System.Drawing.Size(827, 429);
+            this.Controls.Add(this.TextoRresultadoRetroverso);
+            this.Controls.Add(this.TextoAdesivoRetroverso);
+            this.Controls.Add(this.TextoResultadoIlhos);
+            this.Controls.Add(this.TextoResultadoTubeteCorda);
+            this.Controls.Add(this.TextoIlhos);
+            this.Controls.Add(this.TextoTubeteCorda);
+            this.Controls.Add(this.TextoResultadoLona);
+            this.Controls.Add(this.BoxQuantidadeAdesivos);
+            this.Controls.Add(this.TextoQuantidadeAdesivos);
+            this.Controls.Add(this.TextoResultadoComCorte);
+            this.Controls.Add(this.TextoResultadoSemCorte);
+            this.Controls.Add(this.TextoComCorte);
+            this.Controls.Add(this.TextoSemCorte);
+            this.Controls.Add(this.TextoResultadoQtdM2);
+            this.Controls.Add(this.TextoQuantidadeAdesivosM2);
+            this.Controls.Add(this.TextoResultadoAdesivos);
             this.Controls.Add(this.botaoCalcular);
-            this.Controls.Add(this.textResultado);
-            this.Controls.Add(this.textM2);
-            this.Controls.Add(this.boxA);
-            this.Controls.Add(this.boxL);
-            this.Controls.Add(this.textX);
-            this.Controls.Add(this.textAltura);
-            this.Controls.Add(this.textLargura);
+            this.Controls.Add(this.TextoResultadoM2Produto);
+            this.Controls.Add(this.TextoM2produto);
+            this.Controls.Add(this.BoxAltura);
+            this.Controls.Add(this.BoxLargura);
+            this.Controls.Add(this.TextoX);
+            this.Controls.Add(this.TextoAltura);
+            this.Controls.Add(this.TextoLargura);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProgramaPrincipal";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "qteM² by Leandro Ricardo";
+            this.Text = "qtdM² - v1.0";
             this.Load += new System.EventHandler(this.NomePrograma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -368,31 +413,30 @@ namespace CalculandoQTE
         }
 
         #endregion
-        private System.Windows.Forms.Label textLargura;
-        private System.Windows.Forms.Label textAltura;
-        private System.Windows.Forms.Label textX;
-        private System.Windows.Forms.TextBox boxL;
-        private System.Windows.Forms.TextBox boxA;
-        private System.Windows.Forms.Label textM2;
-        private System.Windows.Forms.Label textResultado;
+        private System.Windows.Forms.Label TextoLargura;
+        private System.Windows.Forms.Label TextoAltura;
+        private System.Windows.Forms.Label TextoX;
+        private System.Windows.Forms.TextBox BoxLargura;
+        private System.Windows.Forms.TextBox BoxAltura;
+        private System.Windows.Forms.Label TextoM2produto;
+        private System.Windows.Forms.Label TextoResultadoM2Produto;
         private System.Windows.Forms.Button botaoCalcular;
-        private System.Windows.Forms.Label ListaResultado;
-        private System.Windows.Forms.Label quantidadeItens;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Label resultadoQteM2;
-        private System.Windows.Forms.Label semCorte;
-        private System.Windows.Forms.Label comCorte;
-        private System.Windows.Forms.Label resultadoSemCorte;
-        private System.Windows.Forms.Label resultadoComCorte;
-        private System.Windows.Forms.Label qteAdesivos;
-        private System.Windows.Forms.TextBox quantidadeAdesivos;
-        private System.Windows.Forms.Label resultadoLona;
-        private System.Windows.Forms.Label tubeteCorda;
-        private System.Windows.Forms.Label ilhos;
-        private System.Windows.Forms.Label resultadoTubeteCorda;
-        private System.Windows.Forms.Label resultadoIlhos;
-        private System.Windows.Forms.Label adesivoRetroverso;
-        private System.Windows.Forms.Label resultadoRetroverso;
+        private System.Windows.Forms.Label TextoResultadoAdesivos;
+        private System.Windows.Forms.Label TextoQuantidadeAdesivosM2;
+        private System.Windows.Forms.Label TextoResultadoQtdM2;
+        private System.Windows.Forms.Label TextoSemCorte;
+        private System.Windows.Forms.Label TextoComCorte;
+        private System.Windows.Forms.Label TextoResultadoSemCorte;
+        private System.Windows.Forms.Label TextoResultadoComCorte;
+        private System.Windows.Forms.Label TextoQuantidadeAdesivos;
+        private System.Windows.Forms.TextBox BoxQuantidadeAdesivos;
+        private System.Windows.Forms.Label TextoResultadoLona;
+        private System.Windows.Forms.Label TextoTubeteCorda;
+        private System.Windows.Forms.Label TextoIlhos;
+        private System.Windows.Forms.Label TextoResultadoTubeteCorda;
+        private System.Windows.Forms.Label TextoResultadoIlhos;
+        private System.Windows.Forms.Label TextoAdesivoRetroverso;
+        private System.Windows.Forms.Label TextoRresultadoRetroverso;
     }
 }
 

@@ -39,8 +39,10 @@ namespace CalculandoQTE
             // 
             // imgSenha
             // 
+            this.imgSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imgSenha.BackColor = System.Drawing.Color.Transparent;
             this.imgSenha.Image = ((System.Drawing.Image)(resources.GetObject("imgSenha.Image")));
-            this.imgSenha.Location = new System.Drawing.Point(96, 27);
+            this.imgSenha.Location = new System.Drawing.Point(136, 40);
             this.imgSenha.Name = "imgSenha";
             this.imgSenha.Size = new System.Drawing.Size(37, 35);
             this.imgSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -49,19 +51,22 @@ namespace CalculandoQTE
             // 
             // boxSenha
             // 
-            this.boxSenha.Location = new System.Drawing.Point(65, 85);
+            this.boxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.boxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxSenha.Location = new System.Drawing.Point(102, 103);
             this.boxSenha.Name = "boxSenha";
             this.boxSenha.PasswordChar = '*';
-            this.boxSenha.Size = new System.Drawing.Size(100, 20);
+            this.boxSenha.Size = new System.Drawing.Size(100, 26);
             this.boxSenha.TabIndex = 2;
             this.boxSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.boxSenha.TextChanged += new System.EventHandler(this.boxSenha_TextChanged);
             // 
             // botaoConectar
             // 
-            this.botaoConectar.Location = new System.Drawing.Point(77, 111);
+            this.botaoConectar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.botaoConectar.Location = new System.Drawing.Point(102, 135);
             this.botaoConectar.Name = "botaoConectar";
-            this.botaoConectar.Size = new System.Drawing.Size(75, 23);
+            this.botaoConectar.Size = new System.Drawing.Size(100, 29);
             this.botaoConectar.TabIndex = 3;
             this.botaoConectar.Text = "Conectar";
             this.botaoConectar.UseVisualStyleBackColor = true;
@@ -69,10 +74,12 @@ namespace CalculandoQTE
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 69);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Password";
             // 
@@ -81,7 +88,10 @@ namespace CalculandoQTE
             this.AcceptButton = this.botaoConectar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(228, 157);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(312, 228);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.botaoConectar);
             this.Controls.Add(this.boxSenha);
@@ -89,7 +99,7 @@ namespace CalculandoQTE
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tela_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "qteM² Login";
+            this.Text = "qtdM² - Login";
             this.Load += new System.EventHandler(this.tela_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgSenha)).EndInit();
             this.ResumeLayout(false);

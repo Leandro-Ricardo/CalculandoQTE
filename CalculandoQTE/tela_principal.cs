@@ -45,10 +45,10 @@ namespace CalculandoQTE
             try
             {
                 //Calcula o metro quadrado do obj
-                double altura = Convert.ToDouble(boxA.Text, CultureInfo.InvariantCulture);
-                double largura = Convert.ToDouble(boxL.Text, CultureInfo.InvariantCulture);
+                double altura = Convert.ToDouble(boxA.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
+                double largura = Convert.ToDouble(boxL.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
                 double resultadoM2 = largura * altura;
-                textResultado.Text = resultadoM2.ToString(CultureInfo.InvariantCulture);
+                textResultado.Text = resultadoM2.ToString("".Replace(',', '.'), CultureInfo.InvariantCulture);
 
                 //Exibe a quantidade de adesivos no metro quadrado
                 string resultadoQtem2 = (1 / resultadoM2).ToString("F2");

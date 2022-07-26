@@ -32,7 +32,7 @@ namespace CalculandoQTE
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramaPrincipal));
             this.TextoResultadoAdesivos = new System.Windows.Forms.Label();
             this.TextoQuantidadeAdesivosM2 = new System.Windows.Forms.Label();
-            this.TextoResultadoQtdM2 = new System.Windows.Forms.Label();
+            this.TextoResultQtdePorMetroQuadrado = new System.Windows.Forms.Label();
             this.TextoSemCorte = new System.Windows.Forms.Label();
             this.TextoComCorte = new System.Windows.Forms.Label();
             this.TextoResultadoSemCorte = new System.Windows.Forms.Label();
@@ -43,11 +43,14 @@ namespace CalculandoQTE
             this.TextoResultadoTubeteCorda = new System.Windows.Forms.Label();
             this.TextoResultadoIlhos = new System.Windows.Forms.Label();
             this.TextoAdesivoRetroverso = new System.Windows.Forms.Label();
-            this.TextoRresultadoRetroverso = new System.Windows.Forms.Label();
+            this.TextoResultadoRetroverso = new System.Windows.Forms.Label();
             this.TextoResultadoQtdMin = new System.Windows.Forms.Label();
             this.TextoQuantidadeMaxMinM2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabAdesivos = new System.Windows.Forms.TabPage();
+            this.BoxQuantidadeAdesivos = new System.Windows.Forms.TextBox();
+            this.un = new System.Windows.Forms.Label();
+            this.TextoQuantidadeAdesivos = new System.Windows.Forms.Label();
             this.tabLona = new System.Windows.Forms.TabPage();
             this.TextoLargura = new System.Windows.Forms.Label();
             this.TextoAltura = new System.Windows.Forms.Label();
@@ -55,13 +58,10 @@ namespace CalculandoQTE
             this.BoxLargura = new System.Windows.Forms.TextBox();
             this.BoxAltura = new System.Windows.Forms.TextBox();
             this.TextoM2produto = new System.Windows.Forms.Label();
-            this.TextoResultadoM2Produto = new System.Windows.Forms.Label();
+            this.TextoResultMetroQuadradoProduto = new System.Windows.Forms.Label();
             this.botaoCalcular = new System.Windows.Forms.Button();
             this.mm1 = new System.Windows.Forms.Label();
             this.mm2 = new System.Windows.Forms.Label();
-            this.BoxQuantidadeAdesivos = new System.Windows.Forms.TextBox();
-            this.un = new System.Windows.Forms.Label();
-            this.TextoQuantidadeAdesivos = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabAdesivos.SuspendLayout();
             this.tabLona.SuspendLayout();
@@ -75,11 +75,11 @@ namespace CalculandoQTE
             this.TextoResultadoAdesivos.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoAdesivos.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoAdesivos.ForeColor = System.Drawing.Color.MediumBlue;
-            this.TextoResultadoAdesivos.Location = new System.Drawing.Point(179, 20);
+            this.TextoResultadoAdesivos.Location = new System.Drawing.Point(80, 22);
             this.TextoResultadoAdesivos.Name = "TextoResultadoAdesivos";
-            this.TextoResultadoAdesivos.Size = new System.Drawing.Size(216, 26);
+            this.TextoResultadoAdesivos.Size = new System.Drawing.Size(256, 26);
             this.TextoResultadoAdesivos.TabIndex = 9;
-            this.TextoResultadoAdesivos.Text = "Resultado Adesivos:";
+            this.TextoResultadoAdesivos.Text = "Resultado dos Adesivos:";
             this.TextoResultadoAdesivos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.TextoResultadoAdesivos.UseMnemonic = false;
             // 
@@ -91,26 +91,26 @@ namespace CalculandoQTE
             this.TextoQuantidadeAdesivosM2.BackColor = System.Drawing.Color.Transparent;
             this.TextoQuantidadeAdesivosM2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoQuantidadeAdesivosM2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoQuantidadeAdesivosM2.Location = new System.Drawing.Point(4, 66);
+            this.TextoQuantidadeAdesivosM2.Location = new System.Drawing.Point(44, 105);
             this.TextoQuantidadeAdesivosM2.Name = "TextoQuantidadeAdesivosM2";
             this.TextoQuantidadeAdesivosM2.Size = new System.Drawing.Size(126, 27);
             this.TextoQuantidadeAdesivosM2.TabIndex = 10;
             this.TextoQuantidadeAdesivosM2.Text = "Qtd por M²:";
             // 
-            // TextoResultadoQtdM2
+            // TextoResultQtdePorMetroQuadrado
             // 
-            this.TextoResultadoQtdM2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextoResultadoQtdM2.AutoEllipsis = true;
-            this.TextoResultadoQtdM2.AutoSize = true;
-            this.TextoResultadoQtdM2.BackColor = System.Drawing.Color.Transparent;
-            this.TextoResultadoQtdM2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextoResultadoQtdM2.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoQtdM2.Location = new System.Drawing.Point(128, 69);
-            this.TextoResultadoQtdM2.Name = "TextoResultadoQtdM2";
-            this.TextoResultadoQtdM2.Size = new System.Drawing.Size(47, 23);
-            this.TextoResultadoQtdM2.TabIndex = 11;
-            this.TextoResultadoQtdM2.Text = "0 un";
-            this.TextoResultadoQtdM2.Click += new System.EventHandler(this.resultadoQteM2_Click);
+            this.TextoResultQtdePorMetroQuadrado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoResultQtdePorMetroQuadrado.AutoEllipsis = true;
+            this.TextoResultQtdePorMetroQuadrado.AutoSize = true;
+            this.TextoResultQtdePorMetroQuadrado.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultQtdePorMetroQuadrado.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultQtdePorMetroQuadrado.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultQtdePorMetroQuadrado.Location = new System.Drawing.Point(168, 108);
+            this.TextoResultQtdePorMetroQuadrado.Name = "TextoResultQtdePorMetroQuadrado";
+            this.TextoResultQtdePorMetroQuadrado.Size = new System.Drawing.Size(51, 23);
+            this.TextoResultQtdePorMetroQuadrado.TabIndex = 11;
+            this.TextoResultQtdePorMetroQuadrado.Text = "∞ un";
+            this.TextoResultQtdePorMetroQuadrado.Click += new System.EventHandler(this.resultadoQteM2_Click);
             // 
             // TextoSemCorte
             // 
@@ -120,7 +120,7 @@ namespace CalculandoQTE
             this.TextoSemCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoSemCorte.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoSemCorte.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoSemCorte.Location = new System.Drawing.Point(7, 192);
+            this.TextoSemCorte.Location = new System.Drawing.Point(47, 210);
             this.TextoSemCorte.Name = "TextoSemCorte";
             this.TextoSemCorte.Size = new System.Drawing.Size(205, 27);
             this.TextoSemCorte.TabIndex = 12;
@@ -135,7 +135,7 @@ namespace CalculandoQTE
             this.TextoComCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoComCorte.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoComCorte.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoComCorte.Location = new System.Drawing.Point(7, 260);
+            this.TextoComCorte.Location = new System.Drawing.Point(47, 281);
             this.TextoComCorte.Name = "TextoComCorte";
             this.TextoComCorte.Size = new System.Drawing.Size(204, 27);
             this.TextoComCorte.TabIndex = 13;
@@ -149,7 +149,7 @@ namespace CalculandoQTE
             this.TextoResultadoSemCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoSemCorte.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoSemCorte.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoSemCorte.Location = new System.Drawing.Point(8, 219);
+            this.TextoResultadoSemCorte.Location = new System.Drawing.Point(48, 237);
             this.TextoResultadoSemCorte.Name = "TextoResultadoSemCorte";
             this.TextoResultadoSemCorte.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoSemCorte.TabIndex = 14;
@@ -164,7 +164,7 @@ namespace CalculandoQTE
             this.TextoResultadoComCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoComCorte.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoComCorte.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoComCorte.Location = new System.Drawing.Point(8, 287);
+            this.TextoResultadoComCorte.Location = new System.Drawing.Point(48, 308);
             this.TextoResultadoComCorte.Name = "TextoResultadoComCorte";
             this.TextoResultadoComCorte.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoComCorte.TabIndex = 15;
@@ -178,7 +178,7 @@ namespace CalculandoQTE
             this.TextoResultadoLona.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoLona.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoLona.ForeColor = System.Drawing.Color.MediumBlue;
-            this.TextoResultadoLona.Location = new System.Drawing.Point(214, 21);
+            this.TextoResultadoLona.Location = new System.Drawing.Point(98, 21);
             this.TextoResultadoLona.Name = "TextoResultadoLona";
             this.TextoResultadoLona.Size = new System.Drawing.Size(181, 26);
             this.TextoResultadoLona.TabIndex = 18;
@@ -192,7 +192,7 @@ namespace CalculandoQTE
             this.TextoTubeteCorda.BackColor = System.Drawing.Color.Transparent;
             this.TextoTubeteCorda.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoTubeteCorda.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoTubeteCorda.Location = new System.Drawing.Point(6, 64);
+            this.TextoTubeteCorda.Location = new System.Drawing.Point(54, 107);
             this.TextoTubeteCorda.Name = "TextoTubeteCorda";
             this.TextoTubeteCorda.Size = new System.Drawing.Size(166, 27);
             this.TextoTubeteCorda.TabIndex = 19;
@@ -206,7 +206,7 @@ namespace CalculandoQTE
             this.TextoIlhos.BackColor = System.Drawing.Color.Transparent;
             this.TextoIlhos.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoIlhos.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoIlhos.Location = new System.Drawing.Point(6, 128);
+            this.TextoIlhos.Location = new System.Drawing.Point(54, 171);
             this.TextoIlhos.Name = "TextoIlhos";
             this.TextoIlhos.Size = new System.Drawing.Size(117, 27);
             this.TextoIlhos.TabIndex = 20;
@@ -221,7 +221,7 @@ namespace CalculandoQTE
             this.TextoResultadoTubeteCorda.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoTubeteCorda.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoTubeteCorda.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoTubeteCorda.Location = new System.Drawing.Point(7, 88);
+            this.TextoResultadoTubeteCorda.Location = new System.Drawing.Point(55, 131);
             this.TextoResultadoTubeteCorda.Name = "TextoResultadoTubeteCorda";
             this.TextoResultadoTubeteCorda.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoTubeteCorda.TabIndex = 21;
@@ -236,7 +236,7 @@ namespace CalculandoQTE
             this.TextoResultadoIlhos.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoIlhos.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoIlhos.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoIlhos.Location = new System.Drawing.Point(7, 152);
+            this.TextoResultadoIlhos.Location = new System.Drawing.Point(55, 195);
             this.TextoResultadoIlhos.Name = "TextoResultadoIlhos";
             this.TextoResultadoIlhos.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoIlhos.TabIndex = 22;
@@ -251,27 +251,27 @@ namespace CalculandoQTE
             this.TextoAdesivoRetroverso.BackColor = System.Drawing.Color.Transparent;
             this.TextoAdesivoRetroverso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoAdesivoRetroverso.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoAdesivoRetroverso.Location = new System.Drawing.Point(7, 347);
+            this.TextoAdesivoRetroverso.Location = new System.Drawing.Point(47, 365);
             this.TextoAdesivoRetroverso.Name = "TextoAdesivoRetroverso";
             this.TextoAdesivoRetroverso.Size = new System.Drawing.Size(209, 27);
             this.TextoAdesivoRetroverso.TabIndex = 23;
             this.TextoAdesivoRetroverso.Text = "Adesivo Retroverso:";
             this.TextoAdesivoRetroverso.Click += new System.EventHandler(this.adesivoRetroverso_Click);
             // 
-            // TextoRresultadoRetroverso
+            // TextoResultadoRetroverso
             // 
-            this.TextoRresultadoRetroverso.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextoRresultadoRetroverso.AutoEllipsis = true;
-            this.TextoRresultadoRetroverso.AutoSize = true;
-            this.TextoRresultadoRetroverso.BackColor = System.Drawing.Color.Transparent;
-            this.TextoRresultadoRetroverso.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextoRresultadoRetroverso.ForeColor = System.Drawing.Color.Red;
-            this.TextoRresultadoRetroverso.Location = new System.Drawing.Point(8, 376);
-            this.TextoRresultadoRetroverso.Name = "TextoRresultadoRetroverso";
-            this.TextoRresultadoRetroverso.Size = new System.Drawing.Size(78, 23);
-            this.TextoRresultadoRetroverso.TabIndex = 24;
-            this.TextoRresultadoRetroverso.Text = "R$ 0,00";
-            this.TextoRresultadoRetroverso.Click += new System.EventHandler(this.resultadoRetroverso_Click);
+            this.TextoResultadoRetroverso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoResultadoRetroverso.AutoEllipsis = true;
+            this.TextoResultadoRetroverso.AutoSize = true;
+            this.TextoResultadoRetroverso.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultadoRetroverso.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultadoRetroverso.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultadoRetroverso.Location = new System.Drawing.Point(48, 394);
+            this.TextoResultadoRetroverso.Name = "TextoResultadoRetroverso";
+            this.TextoResultadoRetroverso.Size = new System.Drawing.Size(78, 23);
+            this.TextoResultadoRetroverso.TabIndex = 24;
+            this.TextoResultadoRetroverso.Text = "R$ 0,00";
+            this.TextoResultadoRetroverso.Click += new System.EventHandler(this.resultadoRetroverso_Click);
             // 
             // TextoResultadoQtdMin
             // 
@@ -281,11 +281,11 @@ namespace CalculandoQTE
             this.TextoResultadoQtdMin.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoQtdMin.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoQtdMin.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoQtdMin.Location = new System.Drawing.Point(262, 121);
+            this.TextoResultadoQtdMin.Location = new System.Drawing.Point(303, 149);
             this.TextoResultadoQtdMin.Name = "TextoResultadoQtdMin";
-            this.TextoResultadoQtdMin.Size = new System.Drawing.Size(47, 23);
+            this.TextoResultadoQtdMin.Size = new System.Drawing.Size(51, 23);
             this.TextoResultadoQtdMin.TabIndex = 29;
-            this.TextoResultadoQtdMin.Text = "0 un";
+            this.TextoResultadoQtdMin.Text = "∞ un";
             this.TextoResultadoQtdMin.Click += new System.EventHandler(this.TextoResultadoQtdMin_Click);
             // 
             // TextoQuantidadeMaxMinM2
@@ -296,7 +296,7 @@ namespace CalculandoQTE
             this.TextoQuantidadeMaxMinM2.BackColor = System.Drawing.Color.Transparent;
             this.TextoQuantidadeMaxMinM2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoQuantidadeMaxMinM2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoQuantidadeMaxMinM2.Location = new System.Drawing.Point(4, 118);
+            this.TextoQuantidadeMaxMinM2.Location = new System.Drawing.Point(44, 146);
             this.TextoQuantidadeMaxMinM2.Name = "TextoQuantidadeMaxMinM2";
             this.TextoQuantidadeMaxMinM2.Size = new System.Drawing.Size(263, 27);
             this.TextoQuantidadeMaxMinM2.TabIndex = 28;
@@ -312,7 +312,7 @@ namespace CalculandoQTE
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(605, 519);
+            this.tabControl1.Size = new System.Drawing.Size(605, 517);
             this.tabControl1.TabIndex = 5;
             // 
             // tabAdesivos
@@ -327,21 +327,57 @@ namespace CalculandoQTE
             this.tabAdesivos.Controls.Add(this.TextoResultadoQtdMin);
             this.tabAdesivos.Controls.Add(this.TextoQuantidadeAdesivosM2);
             this.tabAdesivos.Controls.Add(this.TextoQuantidadeMaxMinM2);
-            this.tabAdesivos.Controls.Add(this.TextoResultadoQtdM2);
+            this.tabAdesivos.Controls.Add(this.TextoResultQtdePorMetroQuadrado);
             this.tabAdesivos.Controls.Add(this.TextoSemCorte);
             this.tabAdesivos.Controls.Add(this.TextoComCorte);
             this.tabAdesivos.Controls.Add(this.TextoResultadoSemCorte);
-            this.tabAdesivos.Controls.Add(this.TextoRresultadoRetroverso);
+            this.tabAdesivos.Controls.Add(this.TextoResultadoRetroverso);
             this.tabAdesivos.Controls.Add(this.TextoResultadoComCorte);
             this.tabAdesivos.Controls.Add(this.TextoAdesivoRetroverso);
             this.tabAdesivos.Location = new System.Drawing.Point(4, 22);
             this.tabAdesivos.Margin = new System.Windows.Forms.Padding(0);
             this.tabAdesivos.Name = "tabAdesivos";
             this.tabAdesivos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdesivos.Size = new System.Drawing.Size(597, 493);
+            this.tabAdesivos.Size = new System.Drawing.Size(597, 491);
             this.tabAdesivos.TabIndex = 0;
             this.tabAdesivos.Text = "Adesivos";
             this.tabAdesivos.Click += new System.EventHandler(this.tabAdesivos_Click);
+            // 
+            // BoxQuantidadeAdesivos
+            // 
+            this.BoxQuantidadeAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.BoxQuantidadeAdesivos.Location = new System.Drawing.Point(463, 37);
+            this.BoxQuantidadeAdesivos.Name = "BoxQuantidadeAdesivos";
+            this.BoxQuantidadeAdesivos.Size = new System.Drawing.Size(91, 35);
+            this.BoxQuantidadeAdesivos.TabIndex = 30;
+            this.BoxQuantidadeAdesivos.Text = "0";
+            this.BoxQuantidadeAdesivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BoxQuantidadeAdesivos.TextChanged += new System.EventHandler(this.BoxQuantidadeAdesivos_TextChanged);
+            // 
+            // un
+            // 
+            this.un.AutoSize = true;
+            this.un.BackColor = System.Drawing.Color.Transparent;
+            this.un.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.un.ForeColor = System.Drawing.Color.Red;
+            this.un.Location = new System.Drawing.Point(556, 55);
+            this.un.Name = "un";
+            this.un.Size = new System.Drawing.Size(22, 16);
+            this.un.TabIndex = 32;
+            this.un.Text = "un";
+            // 
+            // TextoQuantidadeAdesivos
+            // 
+            this.TextoQuantidadeAdesivos.AutoSize = true;
+            this.TextoQuantidadeAdesivos.BackColor = System.Drawing.Color.Transparent;
+            this.TextoQuantidadeAdesivos.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.TextoQuantidadeAdesivos.Location = new System.Drawing.Point(438, 8);
+            this.TextoQuantidadeAdesivos.Name = "TextoQuantidadeAdesivos";
+            this.TextoQuantidadeAdesivos.Size = new System.Drawing.Size(143, 26);
+            this.TextoQuantidadeAdesivos.TabIndex = 31;
+            this.TextoQuantidadeAdesivos.Text = "Qtd Adesivos";
             // 
             // tabLona
             // 
@@ -355,7 +391,7 @@ namespace CalculandoQTE
             this.tabLona.Location = new System.Drawing.Point(4, 22);
             this.tabLona.Name = "tabLona";
             this.tabLona.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLona.Size = new System.Drawing.Size(597, 493);
+            this.tabLona.Size = new System.Drawing.Size(597, 491);
             this.tabLona.TabIndex = 1;
             this.tabLona.Text = "Lonas";
             this.tabLona.UseVisualStyleBackColor = true;
@@ -442,21 +478,21 @@ namespace CalculandoQTE
             this.TextoM2produto.Text = "M² do Produto:";
             this.TextoM2produto.Click += new System.EventHandler(this.textM2_Click);
             // 
-            // TextoResultadoM2Produto
+            // TextoResultMetroQuadradoProduto
             // 
-            this.TextoResultadoM2Produto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextoResultadoM2Produto.AutoEllipsis = true;
-            this.TextoResultadoM2Produto.AutoSize = true;
-            this.TextoResultadoM2Produto.BackColor = System.Drawing.Color.Transparent;
-            this.TextoResultadoM2Produto.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextoResultadoM2Produto.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoM2Produto.Location = new System.Drawing.Point(557, 27);
-            this.TextoResultadoM2Produto.Name = "TextoResultadoM2Produto";
-            this.TextoResultadoM2Produto.Size = new System.Drawing.Size(75, 31);
-            this.TextoResultadoM2Produto.TabIndex = 7;
-            this.TextoResultadoM2Produto.Text = "0 mm";
-            this.TextoResultadoM2Produto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.TextoResultadoM2Produto.Click += new System.EventHandler(this.textResultado_Click);
+            this.TextoResultMetroQuadradoProduto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextoResultMetroQuadradoProduto.AutoEllipsis = true;
+            this.TextoResultMetroQuadradoProduto.AutoSize = true;
+            this.TextoResultMetroQuadradoProduto.BackColor = System.Drawing.Color.Transparent;
+            this.TextoResultMetroQuadradoProduto.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoResultMetroQuadradoProduto.ForeColor = System.Drawing.Color.Red;
+            this.TextoResultMetroQuadradoProduto.Location = new System.Drawing.Point(557, 27);
+            this.TextoResultMetroQuadradoProduto.Name = "TextoResultMetroQuadradoProduto";
+            this.TextoResultMetroQuadradoProduto.Size = new System.Drawing.Size(75, 31);
+            this.TextoResultMetroQuadradoProduto.TabIndex = 7;
+            this.TextoResultMetroQuadradoProduto.Text = "0 mm";
+            this.TextoResultMetroQuadradoProduto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TextoResultMetroQuadradoProduto.Click += new System.EventHandler(this.textResultado_Click);
             // 
             // botaoCalcular
             // 
@@ -479,9 +515,9 @@ namespace CalculandoQTE
             this.mm1.ForeColor = System.Drawing.Color.Red;
             this.mm1.Location = new System.Drawing.Point(150, 140);
             this.mm1.Name = "mm1";
-            this.mm1.Size = new System.Drawing.Size(30, 16);
+            this.mm1.Size = new System.Drawing.Size(26, 16);
             this.mm1.TabIndex = 25;
-            this.mm1.Text = "mm";
+            this.mm1.Text = "cm";
             // 
             // mm2
             // 
@@ -491,45 +527,9 @@ namespace CalculandoQTE
             this.mm2.ForeColor = System.Drawing.Color.Red;
             this.mm2.Location = new System.Drawing.Point(150, 220);
             this.mm2.Name = "mm2";
-            this.mm2.Size = new System.Drawing.Size(30, 16);
+            this.mm2.Size = new System.Drawing.Size(26, 16);
             this.mm2.TabIndex = 26;
-            this.mm2.Text = "mm";
-            // 
-            // BoxQuantidadeAdesivos
-            // 
-            this.BoxQuantidadeAdesivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.BoxQuantidadeAdesivos.Location = new System.Drawing.Point(463, 37);
-            this.BoxQuantidadeAdesivos.Name = "BoxQuantidadeAdesivos";
-            this.BoxQuantidadeAdesivos.Size = new System.Drawing.Size(91, 35);
-            this.BoxQuantidadeAdesivos.TabIndex = 30;
-            this.BoxQuantidadeAdesivos.Text = "0";
-            this.BoxQuantidadeAdesivos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BoxQuantidadeAdesivos.TextChanged += new System.EventHandler(this.BoxQuantidadeAdesivos_TextChanged);
-            // 
-            // un
-            // 
-            this.un.AutoSize = true;
-            this.un.BackColor = System.Drawing.Color.Transparent;
-            this.un.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.un.ForeColor = System.Drawing.Color.Red;
-            this.un.Location = new System.Drawing.Point(556, 55);
-            this.un.Name = "un";
-            this.un.Size = new System.Drawing.Size(22, 16);
-            this.un.TabIndex = 32;
-            this.un.Text = "un";
-            // 
-            // TextoQuantidadeAdesivos
-            // 
-            this.TextoQuantidadeAdesivos.AutoSize = true;
-            this.TextoQuantidadeAdesivos.BackColor = System.Drawing.Color.Transparent;
-            this.TextoQuantidadeAdesivos.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextoQuantidadeAdesivos.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoQuantidadeAdesivos.Location = new System.Drawing.Point(438, 8);
-            this.TextoQuantidadeAdesivos.Name = "TextoQuantidadeAdesivos";
-            this.TextoQuantidadeAdesivos.Size = new System.Drawing.Size(143, 26);
-            this.TextoQuantidadeAdesivos.TabIndex = 31;
-            this.TextoQuantidadeAdesivos.Text = "Qtd Adesivos";
+            this.mm2.Text = "cm";
             // 
             // ProgramaPrincipal
             // 
@@ -543,7 +543,7 @@ namespace CalculandoQTE
             this.Controls.Add(this.mm2);
             this.Controls.Add(this.mm1);
             this.Controls.Add(this.botaoCalcular);
-            this.Controls.Add(this.TextoResultadoM2Produto);
+            this.Controls.Add(this.TextoResultMetroQuadradoProduto);
             this.Controls.Add(this.TextoM2produto);
             this.Controls.Add(this.BoxAltura);
             this.Controls.Add(this.BoxLargura);
@@ -571,7 +571,7 @@ namespace CalculandoQTE
         #endregion
         private System.Windows.Forms.Label TextoResultadoAdesivos;
         private System.Windows.Forms.Label TextoQuantidadeAdesivosM2;
-        private System.Windows.Forms.Label TextoResultadoQtdM2;
+        private System.Windows.Forms.Label TextoResultQtdePorMetroQuadrado;
         private System.Windows.Forms.Label TextoSemCorte;
         private System.Windows.Forms.Label TextoComCorte;
         private System.Windows.Forms.Label TextoResultadoSemCorte;
@@ -582,7 +582,7 @@ namespace CalculandoQTE
         private System.Windows.Forms.Label TextoResultadoTubeteCorda;
         private System.Windows.Forms.Label TextoResultadoIlhos;
         private System.Windows.Forms.Label TextoAdesivoRetroverso;
-        private System.Windows.Forms.Label TextoRresultadoRetroverso;
+        private System.Windows.Forms.Label TextoResultadoRetroverso;
         private System.Windows.Forms.Label TextoResultadoQtdMin;
         private System.Windows.Forms.Label TextoQuantidadeMaxMinM2;
         private System.Windows.Forms.TabControl tabControl1;
@@ -594,7 +594,7 @@ namespace CalculandoQTE
         private System.Windows.Forms.TextBox BoxLargura;
         private System.Windows.Forms.TextBox BoxAltura;
         private System.Windows.Forms.Label TextoM2produto;
-        private System.Windows.Forms.Label TextoResultadoM2Produto;
+        private System.Windows.Forms.Label TextoResultMetroQuadradoProduto;
         private System.Windows.Forms.Button botaoCalcular;
         private System.Windows.Forms.Label mm1;
         private System.Windows.Forms.Label mm2;

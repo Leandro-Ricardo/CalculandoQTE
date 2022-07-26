@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="tela_login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="tela_login.Designer.cs">
-      <DependentUpon>tela_login.cs</DependentUpon>
-    </Compile>
     <Compile Include="tela_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="tela_login.resx">
-      <DependentUpon>tela_login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="tela_principal.resx">
       <DependentUpon>tela_principal.cs</DependentUpon>
     </EmbeddedResource>

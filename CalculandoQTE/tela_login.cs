@@ -18,7 +18,7 @@ namespace CalculandoQTE
         Thread nt;
         public tela_login()
         {
-            InitializeComponent();
+           InitializeComponent();
             
         }
 

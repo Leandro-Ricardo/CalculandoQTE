@@ -53,6 +53,7 @@ namespace CalculandoQTE
             // 
             this.boxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.boxSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxSenha.ForeColor = System.Drawing.Color.Red;
             this.boxSenha.Location = new System.Drawing.Point(102, 103);
             this.boxSenha.Name = "boxSenha";
             this.boxSenha.PasswordChar = '*';
@@ -96,7 +97,10 @@ namespace CalculandoQTE
             this.Controls.Add(this.botaoConectar);
             this.Controls.Add(this.boxSenha);
             this.Controls.Add(this.imgSenha);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "tela_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "qtdM² - Login";

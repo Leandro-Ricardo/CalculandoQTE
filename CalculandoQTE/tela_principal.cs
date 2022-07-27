@@ -41,12 +41,12 @@ namespace CalculandoQTE
 
         private void boxA_TextChanged(object sender, EventArgs e)
         {
-            string TESTE = BoxAltura.Text;
-            MessageBox.Show("TESTE");
+
         }
 
         private void boxL_TextChanged(object sender, EventArgs e)
         {
+
 
         }
 
@@ -54,11 +54,13 @@ namespace CalculandoQTE
         {
             try
             {
-                
-                //CALCULA O METRO QUADRADO DO OBJ
-                double Altura = Convert.ToDouble(BoxAltura.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
+
+                //CALCULA O METRO QUADRADO DO OBJ                
                 double Largura = Convert.ToDouble(BoxLargura.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
+                double Altura = Convert.ToDouble(BoxAltura.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
                 double ResultDoMetroQuadrado = (Largura * Altura) / 1000;
+                double ResultDoMetroQuadradoLona = Largura * Altura;
+
 
 
                 //TEXTO DO METRO QUADRADO
@@ -105,18 +107,18 @@ namespace CalculandoQTE
 
 
                     //CALCULA O VALOR DA LONA C/ TUBETE E CORDA                    
-                    double TubeteCorda = ResultDoMetroQuadrado * 60;
+                    double TubeteCorda = (ResultDoMetroQuadradoLona * 60);
                     if (TubeteCorda <= 40) TextoResultadoTubeteCorda.Text = "Valor mín R$" + 40.ToString("F2");
                     else TextoResultadoTubeteCorda.Text = "R$" + TubeteCorda.ToString("F2");
 
 
                     //CALCULA O VALOR DA LONA C/ ILHÓS                    
-                    double Ilhos = ResultDoMetroQuadrado * 80;
+                    double Ilhos = (ResultDoMetroQuadradoLona * 80);
                     if (Ilhos <= 60) TextoResultadoIlhos.Text = "Valor mín R$" + 60.ToString("F2");
                     else TextoResultadoIlhos.Text = "R$" + Ilhos.ToString("F2");
 
-
                 }
+
                 else if (BoxQuantidadeAdesivos.Text == "0" || BoxQuantidadeAdesivos.Text == null)
                 {
                     //RETORNA O VALOR DE ZERO AOS VALORES
@@ -132,6 +134,15 @@ namespace CalculandoQTE
 
         }
 
+        private object textAltura_Click(object sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string textLargura_Click(object sender)
+        {
+            throw new NotImplementedException();
+        }
 
         private void textLargura_Click(object sender, EventArgs e)
         {
@@ -170,7 +181,7 @@ namespace CalculandoQTE
 
         private void resultadoIlhos_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void adesivoRetroverso_Click(object sender, EventArgs e)
@@ -220,11 +231,71 @@ namespace CalculandoQTE
 
         private void tabLona_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void BoxQuantidadeAdesivos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoResultadoAdesivos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoQuantidadeAdesivosM2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoComCorte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoResultadoComCorte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoResultadoLona_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoTubeteCorda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void un_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoQuantidadeAdesivos_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextoX_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mm1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mm2_Click(object sender, EventArgs e)
         {
 
         }

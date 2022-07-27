@@ -64,7 +64,7 @@ namespace CalculandoQTE
 
 
                 //TEXTO DO METRO QUADRADO
-                TextoResultMetroQuadradoProduto.Text = $"{ResultDoMetroQuadrado} mm";
+                ResultMetroQuadradoAdesivo.Text = $"{ResultDoMetroQuadrado} mm";
 
 
                 //EXIBE A QUANTIDADE DE ADESIVOS NO METRO QUADRADO                
@@ -105,7 +105,7 @@ namespace CalculandoQTE
                     if (VerificadorMinQtdeMetroQuadrado >= BoxQtdeAdesivos) TextoResultadoRetroverso.Text = "Valor mín R$" + 80.ToString("F2");
                     else TextoResultadoRetroverso.Text = "R$" + AuxQtdeAdesivos.ToString("F2");
 
-
+                    /*
                     //CALCULA O VALOR DA LONA C/ TUBETE E CORDA                    
                     double TubeteCorda = (ResultDoMetroQuadradoLona * 60);
                     if (TubeteCorda <= 40) TextoResultadoTubeteCorda.Text = "Valor mín R$" + 40.ToString("F2");
@@ -116,7 +116,7 @@ namespace CalculandoQTE
                     double Ilhos = (ResultDoMetroQuadradoLona * 80);
                     if (Ilhos <= 60) TextoResultadoIlhos.Text = "Valor mín R$" + 60.ToString("F2");
                     else TextoResultadoIlhos.Text = "R$" + Ilhos.ToString("F2");
-
+                    */
                 }
 
                 else if (BoxQuantidadeAdesivos.Text == "0" || BoxQuantidadeAdesivos.Text == null)
@@ -296,6 +296,11 @@ namespace CalculandoQTE
         }
 
         private void mm2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResultMetroQuadradoAdesivo_Click(object sender, EventArgs e)
         {
 
         }

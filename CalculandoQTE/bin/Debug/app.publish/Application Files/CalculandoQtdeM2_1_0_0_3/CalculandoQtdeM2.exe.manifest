@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CalculandoQtdeM2.exe" version="1.0.0.3" publicKeyToken="bc2fedc661640c6a" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ico.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CalculandoQtdeM2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CalculandoQtdeM2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CalculandoQtdeM2.exe" size="1041888">
+      <assemblyIdentity name="CalculandoQtdeM2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>laZHfDqddnFtGda9rMU4/movrkjqeXh7xdcEDYqS+0A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CalculandoQtdeM2.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ico.ico" size="10060">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oIOyPeJvdOTEYJExijqg1S8Jgjr91oZGgKHerKP24rc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LEANDRO\Administrador" issuerKeyHash="75ba6e533db1e3a699b1aeb0d84b24217b79f183" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/YQuqPUX6h4+quGbNi4raLJFq0BkJy9yOjeBbQ7P7Sg=</DigestValue></Reference></SignedInfo><SignatureValue>elkCnSl5dJnTwQgyEjvQ2RRo8WUKxs1r1lpVYV+YyDp6HPaqm8x1p8gI6Nvghik5uJVRNBxq1nD9nDdrcjiDsxMejgmq9jdbT3RgZ6laQ+zAzWTYXaaaIdrwK8Qht56APnAJrWXXGAGObr4+YOaj9ocNwfyUXoE4mUrfauHfhnA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xKZjOc92EJX8CJhP/8ZLyMdeDMA6Z0U01oYzGPVevAB4SxmLj4cpvJybvE1bLodqTuykyqASAFJiMQMTo6oC0Ki1pS/3j7mxNaDM3qDFRJgwl+/IwtgdfxglSKM1CwM+oOCJc5ZYGUb98t0+C8a0/3rbwMB1/XPHEuM6wRrx+Lk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="28edcf0e6d81373a722f276440ab45b2682b2e369be1aa3e1eea17f5a82e84fd" Description="" Url=""><as:assemblyIdentity name="CalculandoQtdeM2.exe" version="1.0.0.3" publicKeyToken="bc2fedc661640c6a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LEANDRO\Administrador</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zp0Yx1ZXQazNgbGcfRYN4bE+OstSb4yTmjdvaZ12ekk=</DigestValue></Reference></SignedInfo><SignatureValue>GrbairCNtCxeLshDBNIH+0n8BNfL5mdeIpc8eyLwPczLArv4V06DpodEm+vxNUcwpFgkl9eH9V28gNtwJpEYAmEX9GIcxr56WNKOUyl3wAo88FPQ+xi0AMgnpDDHDlJ5meJ6zIfwBz+HvR39/k0XXIHb/C9BoVQLF4XAMAaldy8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xKZjOc92EJX8CJhP/8ZLyMdeDMA6Z0U01oYzGPVevAB4SxmLj4cpvJybvE1bLodqTuykyqASAFJiMQMTo6oC0Ki1pS/3j7mxNaDM3qDFRJgwl+/IwtgdfxglSKM1CwM+oOCJc5ZYGUb98t0+C8a0/3rbwMB1/XPHEuM6wRrx+Lk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQRFTrGETEuLVBrAmVLE1g+jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioATABFAEEATgBEAFIATwBcAEEAZABtAGkAbgBpAHMAdAByAGEAZABvAHIwHhcNMjIwNzI3MTAzNzA5WhcNMjMwNzI3MTYzNzA5WjA1MTMwMQYDVQQDHioATABFAEEATgBEAFIATwBcAEEAZABtAGkAbgBpAHMAdAByAGEAZABvAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMSmYznPdhCV/AiYT//GS8jHXgzAOmdFNNaGMxj1XrwAeEsZi4+HKbycm7xNWy6Hak7spMqgEgBSYjEDE6OqAtCotaUv94+5sTWgzN6gxUSYMJfvyMLYHX8YJUijNQsDPqDgiXOWWBlG/fLdPgvGtP9628DAdf1zxxLjOsEa8fi5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEASJNzx80N0N1LiqbiFelOLiprOMcHxRPMRDDLtzaiuHJ4366+5p0Ax4Rp3DQmf4KleXGkYMLYvJJSFLavqKQhqYCaMmaLZInSAn5bFK9p5s4ycUsk46sGjwnnuWT7IbimCOJsBg7Yn9QqhVF7gIdkOrForny1HGanKytbSs2D9gc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -26,7 +26,7 @@
     <ProductName>Qtde v1.0</ProductName>
     <PublisherName>Leandro Ricardo</PublisherName>
     <SuiteName>Qtde v1.0</SuiteName>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

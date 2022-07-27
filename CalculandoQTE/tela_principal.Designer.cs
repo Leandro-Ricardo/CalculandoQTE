@@ -50,6 +50,7 @@ namespace CalculandoQTE
             this.un = new System.Windows.Forms.Label();
             this.TextoQuantidadeAdesivos = new System.Windows.Forms.Label();
             this.tabLona = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.mm2 = new System.Windows.Forms.Label();
             this.mm1 = new System.Windows.Forms.Label();
             this.botaoCalcular = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@ namespace CalculandoQTE
             this.TextoLargura = new System.Windows.Forms.Label();
             this.TextoMetroQuadradoDoAdesivo = new System.Windows.Forms.Label();
             this.ResultMetroQuadradoAdesivo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabAdesivos.SuspendLayout();
             this.tabLona.SuspendLayout();
@@ -74,7 +74,7 @@ namespace CalculandoQTE
             this.TextoResultadoAdesivos.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoAdesivos.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoAdesivos.ForeColor = System.Drawing.Color.MediumBlue;
-            this.TextoResultadoAdesivos.Location = new System.Drawing.Point(41, 51);
+            this.TextoResultadoAdesivos.Location = new System.Drawing.Point(41, 50);
             this.TextoResultadoAdesivos.Name = "TextoResultadoAdesivos";
             this.TextoResultadoAdesivos.Size = new System.Drawing.Size(256, 26);
             this.TextoResultadoAdesivos.TabIndex = 9;
@@ -91,7 +91,7 @@ namespace CalculandoQTE
             this.TextoQuantidadeAdesivosM2.BackColor = System.Drawing.Color.Transparent;
             this.TextoQuantidadeAdesivosM2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoQuantidadeAdesivosM2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoQuantidadeAdesivosM2.Location = new System.Drawing.Point(38, 107);
+            this.TextoQuantidadeAdesivosM2.Location = new System.Drawing.Point(38, 106);
             this.TextoQuantidadeAdesivosM2.Name = "TextoQuantidadeAdesivosM2";
             this.TextoQuantidadeAdesivosM2.Size = new System.Drawing.Size(126, 27);
             this.TextoQuantidadeAdesivosM2.TabIndex = 10;
@@ -106,7 +106,7 @@ namespace CalculandoQTE
             this.TextoResultQtdePorMetroQuadrado.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultQtdePorMetroQuadrado.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultQtdePorMetroQuadrado.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultQtdePorMetroQuadrado.Location = new System.Drawing.Point(162, 110);
+            this.TextoResultQtdePorMetroQuadrado.Location = new System.Drawing.Point(162, 109);
             this.TextoResultQtdePorMetroQuadrado.Name = "TextoResultQtdePorMetroQuadrado";
             this.TextoResultQtdePorMetroQuadrado.Size = new System.Drawing.Size(51, 23);
             this.TextoResultQtdePorMetroQuadrado.TabIndex = 11;
@@ -121,7 +121,7 @@ namespace CalculandoQTE
             this.TextoSemCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoSemCorte.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoSemCorte.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoSemCorte.Location = new System.Drawing.Point(41, 212);
+            this.TextoSemCorte.Location = new System.Drawing.Point(41, 211);
             this.TextoSemCorte.Name = "TextoSemCorte";
             this.TextoSemCorte.Size = new System.Drawing.Size(205, 27);
             this.TextoSemCorte.TabIndex = 12;
@@ -136,7 +136,7 @@ namespace CalculandoQTE
             this.TextoComCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoComCorte.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoComCorte.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoComCorte.Location = new System.Drawing.Point(41, 283);
+            this.TextoComCorte.Location = new System.Drawing.Point(41, 282);
             this.TextoComCorte.Name = "TextoComCorte";
             this.TextoComCorte.Size = new System.Drawing.Size(204, 27);
             this.TextoComCorte.TabIndex = 13;
@@ -151,7 +151,7 @@ namespace CalculandoQTE
             this.TextoResultadoSemCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoSemCorte.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoSemCorte.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoSemCorte.Location = new System.Drawing.Point(42, 239);
+            this.TextoResultadoSemCorte.Location = new System.Drawing.Point(42, 238);
             this.TextoResultadoSemCorte.Name = "TextoResultadoSemCorte";
             this.TextoResultadoSemCorte.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoSemCorte.TabIndex = 14;
@@ -166,7 +166,7 @@ namespace CalculandoQTE
             this.TextoResultadoComCorte.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoComCorte.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoComCorte.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoComCorte.Location = new System.Drawing.Point(42, 310);
+            this.TextoResultadoComCorte.Location = new System.Drawing.Point(42, 309);
             this.TextoResultadoComCorte.Name = "TextoResultadoComCorte";
             this.TextoResultadoComCorte.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoComCorte.TabIndex = 15;
@@ -196,7 +196,7 @@ namespace CalculandoQTE
             this.TextoAdesivoRetroverso.BackColor = System.Drawing.Color.Transparent;
             this.TextoAdesivoRetroverso.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoAdesivoRetroverso.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoAdesivoRetroverso.Location = new System.Drawing.Point(41, 367);
+            this.TextoAdesivoRetroverso.Location = new System.Drawing.Point(41, 366);
             this.TextoAdesivoRetroverso.Name = "TextoAdesivoRetroverso";
             this.TextoAdesivoRetroverso.Size = new System.Drawing.Size(209, 27);
             this.TextoAdesivoRetroverso.TabIndex = 23;
@@ -211,7 +211,7 @@ namespace CalculandoQTE
             this.TextoResultadoRetroverso.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoRetroverso.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoRetroverso.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoRetroverso.Location = new System.Drawing.Point(42, 396);
+            this.TextoResultadoRetroverso.Location = new System.Drawing.Point(42, 395);
             this.TextoResultadoRetroverso.Name = "TextoResultadoRetroverso";
             this.TextoResultadoRetroverso.Size = new System.Drawing.Size(78, 23);
             this.TextoResultadoRetroverso.TabIndex = 24;
@@ -226,7 +226,7 @@ namespace CalculandoQTE
             this.TextoResultadoQtdMin.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultadoQtdMin.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultadoQtdMin.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultadoQtdMin.Location = new System.Drawing.Point(297, 151);
+            this.TextoResultadoQtdMin.Location = new System.Drawing.Point(297, 150);
             this.TextoResultadoQtdMin.Name = "TextoResultadoQtdMin";
             this.TextoResultadoQtdMin.Size = new System.Drawing.Size(51, 23);
             this.TextoResultadoQtdMin.TabIndex = 29;
@@ -241,7 +241,7 @@ namespace CalculandoQTE
             this.TextoQuantidadeMaxMinM2.BackColor = System.Drawing.Color.Transparent;
             this.TextoQuantidadeMaxMinM2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoQuantidadeMaxMinM2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.TextoQuantidadeMaxMinM2.Location = new System.Drawing.Point(38, 148);
+            this.TextoQuantidadeMaxMinM2.Location = new System.Drawing.Point(38, 147);
             this.TextoQuantidadeMaxMinM2.Name = "TextoQuantidadeMaxMinM2";
             this.TextoQuantidadeMaxMinM2.Size = new System.Drawing.Size(263, 27);
             this.TextoQuantidadeMaxMinM2.TabIndex = 28;
@@ -257,7 +257,7 @@ namespace CalculandoQTE
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(597, 511);
+            this.tabControl1.Size = new System.Drawing.Size(597, 509);
             this.tabControl1.TabIndex = 5;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -286,7 +286,7 @@ namespace CalculandoQTE
             this.tabAdesivos.Margin = new System.Windows.Forms.Padding(0);
             this.tabAdesivos.Name = "tabAdesivos";
             this.tabAdesivos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdesivos.Size = new System.Drawing.Size(589, 485);
+            this.tabAdesivos.Size = new System.Drawing.Size(589, 483);
             this.tabAdesivos.TabIndex = 0;
             this.tabAdesivos.Text = "Adesivos";
             this.tabAdesivos.Click += new System.EventHandler(this.tabAdesivos_Click);
@@ -299,7 +299,7 @@ namespace CalculandoQTE
             this.TextoResultMetroQuadradoProduto.BackColor = System.Drawing.Color.Transparent;
             this.TextoResultMetroQuadradoProduto.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoResultMetroQuadradoProduto.ForeColor = System.Drawing.Color.Red;
-            this.TextoResultMetroQuadradoProduto.Location = new System.Drawing.Point(607, -54);
+            this.TextoResultMetroQuadradoProduto.Location = new System.Drawing.Point(607, -55);
             this.TextoResultMetroQuadradoProduto.Name = "TextoResultMetroQuadradoProduto";
             this.TextoResultMetroQuadradoProduto.Size = new System.Drawing.Size(75, 31);
             this.TextoResultMetroQuadradoProduto.TabIndex = 7;
@@ -327,7 +327,7 @@ namespace CalculandoQTE
             this.TextoM2produto.BackColor = System.Drawing.Color.Transparent;
             this.TextoM2produto.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextoM2produto.ForeColor = System.Drawing.Color.Red;
-            this.TextoM2produto.Location = new System.Drawing.Point(431, -54);
+            this.TextoM2produto.Location = new System.Drawing.Point(431, -55);
             this.TextoM2produto.Name = "TextoM2produto";
             this.TextoM2produto.Size = new System.Drawing.Size(182, 31);
             this.TextoM2produto.TabIndex = 6;
@@ -375,6 +375,15 @@ namespace CalculandoQTE
             this.tabLona.UseVisualStyleBackColor = true;
             this.tabLona.Click += new System.EventHandler(this.tabLona_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(223, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "em criação...";
+            // 
             // mm2
             // 
             this.mm2.AutoSize = true;
@@ -383,9 +392,9 @@ namespace CalculandoQTE
             this.mm2.ForeColor = System.Drawing.Color.Red;
             this.mm2.Location = new System.Drawing.Point(142, 258);
             this.mm2.Name = "mm2";
-            this.mm2.Size = new System.Drawing.Size(26, 16);
+            this.mm2.Size = new System.Drawing.Size(30, 16);
             this.mm2.TabIndex = 26;
-            this.mm2.Text = "cm";
+            this.mm2.Text = "mm";
             this.mm2.Click += new System.EventHandler(this.mm2_Click);
             // 
             // mm1
@@ -396,9 +405,9 @@ namespace CalculandoQTE
             this.mm1.ForeColor = System.Drawing.Color.Red;
             this.mm1.Location = new System.Drawing.Point(142, 178);
             this.mm1.Name = "mm1";
-            this.mm1.Size = new System.Drawing.Size(26, 16);
+            this.mm1.Size = new System.Drawing.Size(30, 16);
             this.mm1.TabIndex = 25;
-            this.mm1.Text = "cm";
+            this.mm1.Text = "mm";
             this.mm1.Click += new System.EventHandler(this.mm1_Click);
             // 
             // botaoCalcular
@@ -423,7 +432,7 @@ namespace CalculandoQTE
             this.BoxAltura.Name = "BoxAltura";
             this.BoxAltura.Size = new System.Drawing.Size(91, 35);
             this.BoxAltura.TabIndex = 2;
-            this.BoxAltura.Text = "0,0";
+            this.BoxAltura.Text = "0,00";
             this.BoxAltura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BoxAltura.TextChanged += new System.EventHandler(this.boxA_TextChanged);
             // 
@@ -438,7 +447,7 @@ namespace CalculandoQTE
             this.BoxLargura.Name = "BoxLargura";
             this.BoxLargura.Size = new System.Drawing.Size(91, 35);
             this.BoxLargura.TabIndex = 1;
-            this.BoxLargura.Text = "0,0";
+            this.BoxLargura.Text = "0,00";
             this.BoxLargura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BoxLargura.TextChanged += new System.EventHandler(this.boxL_TextChanged);
             // 
@@ -509,15 +518,6 @@ namespace CalculandoQTE
             this.ResultMetroQuadradoAdesivo.TabIndex = 28;
             this.ResultMetroQuadradoAdesivo.Text = "0 mm";
             this.ResultMetroQuadradoAdesivo.Click += new System.EventHandler(this.ResultMetroQuadradoAdesivo_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(223, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "em criação...";
             // 
             // ProgramaPrincipal
             // 

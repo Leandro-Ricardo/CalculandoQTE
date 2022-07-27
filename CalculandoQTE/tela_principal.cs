@@ -18,7 +18,10 @@ namespace CalculandoQTE
             DateTime d = new DateTime(2022, 12, 31, 23, 59, 59, DateTimeKind.Utc);
             if (d <= DateTime.Now)
             {
-                MessageBox.Show("O tempo expirou, favor entrar em contato com o desenvolvedor!");
+                MessageBox.Show("                       " +
+                    "O tempo expirou, \n" +
+                    "favor entrar em contato com o desenvolvedor! \n\n   " +
+                    "(21) 97253-6323 / leandroricardo@live.com"); ;
                 this.Close();
             }
             else
@@ -58,7 +61,7 @@ namespace CalculandoQTE
                 //CALCULA O METRO QUADRADO DO OBJ                
                 double Largura = Convert.ToDouble(BoxLargura.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
                 double Altura = Convert.ToDouble(BoxAltura.Text.Replace(',', '.'), CultureInfo.InvariantCulture);
-                double ResultDoMetroQuadrado = (Largura * Altura) / 1000;
+                double ResultDoMetroQuadrado = (Largura * Altura);
                 double ResultDoMetroQuadradoLona = Largura * Altura;
 
 
